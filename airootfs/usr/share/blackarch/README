@@ -1,0 +1,11 @@
+[ NETWORK ]
+
+  - Network is not configured by default because of security reasons.
+    to enable it run: systemctl start NetworkManager
+
+[ INSTALL ]
+
+  - to install BlackArch Linux simply run 'blackarch-install' and follow the
+    instructions
+
+For more information, check the install file under /root.

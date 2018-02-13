@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+if grep "hypervisor" /proc/cpuinfo ; then
+	VBoxClient-all &
+fi
+

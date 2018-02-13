@@ -1,0 +1,5 @@
+*.badevfile
+*.swp
+*.iso
+work/
+out/
