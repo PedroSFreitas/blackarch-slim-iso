@@ -20,7 +20,9 @@ systemctl set-default graphical.target
 
 # create the user directory for live session
 if [ ! -d /root ]; then
-	mkdir /root && chmod 700 /root && chown -R root:root /root
+    mkdir /root
+    chmod 700 /root && chown -R root:root /root
+    mkdir -p /root/Desktop
 fi
 
 # disable pc speaker beep
@@ -42,15 +44,15 @@ su -c 'chsh -s /bin/zsh' root
 
 # font configuration
 su -c 'ln -fs /etc/fonts/conf.avail/70-no-bitmaps.conf \
-	/etc/fonts/conf.d' root
+    /etc/fonts/conf.d' root
 su -c 'ln -fs /etc/fonts/conf.avail/10-sub-pixel-rgb.conf \
-	/etc/fonts/conf.d' root
+    /etc/fonts/conf.d' root
 su -c 'ln -fs /etc/fonts/conf.avail/11-lcdfilter-default.conf \
-	/etc/fonts/conf.d' root
+    /etc/fonts/conf.d' root
 
 # installation and README files
-su -c 'ln -sfv /usr/share/blackarch/install /root/install' root
-su -c 'ln -sfv /usr/share/blackarch/README /root/README' root
+su -c 'ln -sfv /usr/share/blackarch/install /root/Desktop/install' root
+su -c 'ln -sfv /usr/share/blackarch/README /root/Desktop/README' root
 
 # xfce4 skel configuration
 su -c 'mkdir -p /root/.config/' root
