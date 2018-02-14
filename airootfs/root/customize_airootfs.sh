@@ -33,7 +33,7 @@ systemctl disable dhcpcd sshd rpcbind.service
 
 # remove special (not needed) files
 su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
-su -c 'rm /root/{.automated_script.sh,.zlogin,*.swp}' root
+su -c 'rm /root/{.automated_script.sh,.zlogin}' root
 
 # setting root password
 su -c 'echo "root:blackarch" | chpasswd' root
@@ -58,13 +58,11 @@ su -c 'mkdir -p /root/.config/' root
 su -c 'cp -rfv /etc/skel/xfce4/ /root/.config/' root
 
 # setup repository, add pacman.conf entry, sync databases
-su -c 'curl -s https://blackarch.org/strap.sh | sh' root
 su -c 'pacman -Syyu --noconfirm' root
 su -c 'pacman-optimize' root
-su -c 'updatedb' root
 su -c 'pacman-db-upgrade' root
-su -c 'pkgfile -u' root
-su -c 'pacman -Syy' root
 su -c 'pacman -Scc --noconfirm' root
-su -c 'sync' root
+su -c 'curl -s https://blackarch.org/strap.sh | sh' root
+su -c 'pacman-key --init' root
+su -c 'pacman-key --populate blackarch archlinux' root
 
