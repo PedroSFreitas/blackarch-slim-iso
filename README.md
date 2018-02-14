@@ -3,37 +3,39 @@
 
 ## Map
 
-- build.sh: script to create the image.
+- build.sh: Script to create the image.
 
-- packages.x86_64: default packages to be installed on the Live ISO.
+- packages.x86_64: Default packages to be installed on the Live ISO.
 
-- airootfs/root/customize_airootfs.sh: script that runs commands on the Live ISO
+- airootfs/root/customize_airootfs.sh: Script that runs commands on the Live ISO
   during the building process. You can modify this file to run any
   administration command or to modify any configuration file.
 
-## To build the image
+## Building the Image
 
-- run (considering you have already git clone'd the repository and cd'd to it):
+Clone the repo and run the following:
+
 ```
+cd blackarch-slim-iso
 rm -rfv out work
 mkdir out work
 ./build.sh -v
 ```
 
-- the iso will be outputed to the `out/` folder.
+The finished ISO will be located in the `out` folder.
 
-## Sreenshots
+## Screenshots
 
 ![empty](docs/empty.png)
 ![fakebusy](docs/fakebusy.png)
 ![another fakebusy](docs/fakebusy1.png)
 
-## Suggestion, ideas?
+## Suggestions
 
-- if you have any ideas, consider open an Issue.
-  Please, make use of the description box and right an useful issue.
+- If you have any ideas, please consider opening an issue.
+  Make sure to use the description box and write a useful and informative issue.
 
-- if you would like to see an application to be installed by default in the ISO
-  make sure to create an Issue or PR describing why it would be a good idea to
+- If you would like to see an application installed by default in the ISO
+  make sure to create an issue or pull request describing why it would be a good idea to
   have that specific tool installed.
 
