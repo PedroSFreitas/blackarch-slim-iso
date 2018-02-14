@@ -14,8 +14,7 @@ ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 sed -i "s|#Server|Server|g" /etc/pacman.d/mirrorlist
 
 # enable useful services and display manager
-enabled_services=('pacman-init.service' 'choose-mirror.service' 'lxdm.service'
-	'vboxservice.service')
+enabled_services=('choose-mirror.service' 'lxdm.service' 'vboxservice.service')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
