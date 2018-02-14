@@ -55,8 +55,7 @@ su -c 'ln -sfv /usr/share/blackarch/install /root/Desktop/install' root
 su -c 'ln -sfv /usr/share/blackarch/README /root/Desktop/README' root
 
 # xfce4 skel configuration
-su -c 'mkdir -p /root/.config/' root
-su -c 'cp -rfv /etc/skel/xfce4/ /root/.config/' root
+su -c 'tar xvf /etc/skel/config.tar.gz -C /root/' root
 
 # setup repository, add pacman.conf entry, sync databases
 su -c 'pacman -Syy --noconfirm' root
@@ -68,5 +67,5 @@ su -c 'curl -s https://blackarch.org/strap.sh | sh' root
 su -c 'pacman-key --populate blackarch archlinux' root
 
 # disabling VirtualBox notification
-su -c 'sed -i "s|notify|#notify|g" /usr/bin/VBoxClient-all' root
+su -c 'sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all' root
 
