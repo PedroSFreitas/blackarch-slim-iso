@@ -40,8 +40,6 @@ findsploit
 firefox
 gcc
 gdb
-geany
-geany-plugins
 gobuster
 grml-zsh-config
 gvim
