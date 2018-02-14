@@ -1,5 +1,5 @@
 favorites=exo-file-manager.desktop,firefox.desktop,geany.desktop,gvim.desktop,exo-terminal-emulator.desktop,tor-browser-en.desktop
-recent=exo-terminal-emulator.desktop,exo-file-manager.desktop,gvim.desktop,exo-web-browser.desktop
+recent=exo-terminal-emulator.desktop,xfce-session-settings.desktop,firefox.desktop,xfce-mouse-settings.desktop,exo-file-manager.desktop,gvim.desktop,exo-web-browser.desktop
 button-title=Applications
 button-icon=face-angry-symbolic
 button-single-row=false

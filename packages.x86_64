@@ -141,3 +141,7 @@ xorg
 zsh
 zsh-completions
 zsh-syntax-highlighting
+gnome-keyring
+libsecret
+libgnome-keyring
+

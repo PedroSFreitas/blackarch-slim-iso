@@ -33,6 +33,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="networkmanager applet"/>
+        <value type="string" value="xfce4-power-manager"/>
       </property>
     </property>
     <property name="plugin-1" type="string" value="whiskermenu"/>
