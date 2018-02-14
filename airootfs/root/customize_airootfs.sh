@@ -24,14 +24,6 @@ if [ ! -d /root ]; then
 	mkdir /root && chmod 700 /root && chown -R root:root /root
 fi
 
-# setup repository, add pacman.conf entry, sync databases
-su -c 'curl -s https://blackarch.org/strap.sh | sh' root
-
-# sys updates, cleanups, etc.
-su -c 'pacman-db-upgrade' root
-su -c 'pacman-optimize' root
-su -c 'sync' root
-
 # disable pc speaker beep
 su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
 
@@ -41,7 +33,7 @@ systemctl disable dhcpcd sshd rpcbind.service
 
 # remove special (not needed) scripts
 su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
-su -c 'rm /root/{.automated_script.sh,.zlogin}' root
+su -c 'rm /root/{.automated_script.sh,.zlogin,*.swp}' root
 
 # setting root password
 su -c 'echo "root:blackarch" | chpasswd' root
@@ -64,3 +56,15 @@ su -c 'ln -sfv /usr/share/blackarch/README /root/README' root
 # xfce4 skel configuration
 su -c 'mkdir -p /root/.config/' root
 su -c 'cp -rfv /etc/skel/xfce4/ /root/.config/' root
+
+# setup repository, add pacman.conf entry, sync databases
+su -c 'curl -s https://blackarch.org/strap.sh | sh' root
+su -c 'pacman -Syyu --noconfirm' root
+su -c 'pacman-optimize' root
+su -c 'updatedb' root
+su -c 'pacman-db-upgrade' root
+su -c 'pkgfile -u' root
+su -c 'pacman -Syy' root
+su -c 'pacman -Scc --noconfirm' root
+su -c 'sync' root
+
