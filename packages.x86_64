@@ -38,6 +38,7 @@ ttf-ionicons
 ttf-liberation
 ttf-dejavu
 blackarch-installer
+perl-image-exiftool
 noto-fonts
 unrar
 unzip
@@ -63,7 +64,6 @@ base64dump
 belati
 bettercap
 binaryninja-demo
-blackarch-menus
 burpsuite
 cewl
 cisco-auditing-tool
