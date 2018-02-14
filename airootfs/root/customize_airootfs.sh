@@ -22,8 +22,10 @@ systemctl set-default graphical.target
 if [ ! -d /root ]; then
     mkdir /root
     chmod 700 /root && chown -R root:root /root
-    mkdir -p /root/Desktop
 fi
+
+# create root Desktop folder
+mkdir -p /root/Desktop
 
 # disable pc speaker beep
 su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
