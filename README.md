@@ -24,6 +24,11 @@ Clone the repo and run the following **as root**:
 
 The finished ISO will be located in the `out` folder.
 
+login:
+- root:blackarch
+
+Note: make sure to check the README inside Desktop.
+
 ## Screenshots
 
 ![empty](docs/empty.png)
