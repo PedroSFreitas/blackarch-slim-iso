@@ -31,7 +31,7 @@ su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
 rm /etc/udev/rules.d/81-dhcpcd.rules
 systemctl disable dhcpcd sshd rpcbind.service
 
-# remove special (not needed) scripts
+# remove special (not needed) files
 su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
 su -c 'rm /root/{.automated_script.sh,.zlogin,*.swp}' root
 
@@ -49,7 +49,7 @@ su -c 'ln -fs /etc/fonts/conf.avail/10-sub-pixel-rgb.conf \
 su -c 'ln -fs /etc/fonts/conf.avail/11-lcdfilter-default.conf \
 	/etc/fonts/conf.d' root
 
-# Installation README.
+# installation and README files
 su -c 'ln -sfv /usr/share/blackarch/install /root/install' root
 su -c 'ln -sfv /usr/share/blackarch/README /root/README' root
 
