@@ -13,13 +13,13 @@
 
 ## Building the Image
 
-Clone the repo and run the following:
+Clone the repo and run the following **as root**:
 
 ```
-cd blackarch-slim-iso
-rm -rfv out work
-mkdir out work
-./build.sh -v
+# cd blackarch-slim-iso
+# rm -rfv out work
+# mkdir out work
+# ./build.sh -v
 ```
 
 The finished ISO will be located in the `out` folder.
