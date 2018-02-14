@@ -57,11 +57,14 @@ su -c 'mkdir -p /root/.config/' root
 su -c 'cp -rfv /etc/skel/xfce4/ /root/.config/' root
 
 # setup repository, add pacman.conf entry, sync databases
-su -c 'pacman -Syyu --noconfirm' root
+su -c 'pacman -Syy --noconfirm' root
+su -c 'pacman -Scc --noconfirm' root
 su -c 'pacman-optimize' root
 su -c 'pacman-db-upgrade' root
-su -c 'pacman -Scc --noconfirm' root
 su -c 'curl -s https://blackarch.org/strap.sh | sh' root
 su -c 'pacman-key --init' root
 su -c 'pacman-key --populate blackarch archlinux' root
+
+# disabling VirtualBox notification
+su -c 'sed -i "s|notify|#notify|g" /usr/bin/VBoxClient-all' root
 
