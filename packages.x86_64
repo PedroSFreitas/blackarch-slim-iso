@@ -99,6 +99,7 @@ set
 shellcheck
 shodan
 sn1per
+sparta
 sqlmap
 sshfs
 stegdetect
@@ -118,6 +119,7 @@ ttf-ionicons
 ttf-liberation
 tweets-analyzer
 twofi
+unicornscan
 unrar
 unzip
 virtualbox-guest-modules-arch
