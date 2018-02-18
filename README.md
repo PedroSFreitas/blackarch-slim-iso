@@ -13,6 +13,7 @@
 
 ## Building the Image
 
+Building the image is only possible on an Arch Linux installation.
 Clone the repo and run the following **as root**:
 
 ```
@@ -29,6 +30,11 @@ login:
 
 Note: make sure to check the README inside Desktop.
 
+## Installation
+
+- The Arch way. Read: https://wiki.archlinux.org/index.php/archiso#Installation_without_Internet_access
+READ READ READ!
+
 ## Screenshots
 
 ![empty](docs/empty.png)
@@ -40,7 +46,7 @@ Note: make sure to check the README inside Desktop.
 - If you have any ideas, please consider opening an issue.
   Make sure to use the description box and write a useful and informative issue.
 
-- If you would like to see an application installed by default in the ISO
-  make sure to create an issue or pull request describing why it would be a good idea to
-  have that specific tool installed.
+- If you would like to see an application installed by default in the ISO make
+  sure to create an issue or pull request describing why it would be a good idea
+  to have that specific tool installed.
 

@@ -1,11 +1,27 @@
 [ NETWORK ]
 
-  - Network is not configured by default because of security reasons.
-    to enable it run: systemctl start NetworkManager
+  - Network is not configured by default because of security reasons. To enable
+    it run: systemctl start NetworkManager.
+    Attention: if NetworkManager applet doesn't prompt for password, logout and
+    login again. This is because when we start NetworkManager the keyring wasn't
+    unlocked.
 
 [ INSTALL ]
 
-  - to install BlackArch Linux simply run 'blackarch-install' and follow the
-    instructions
+  - BlackArch is Arch Linux, so installation is manual. This give you total
+    control of what is being installed and make sure this system is right for
+    you.
+  - Although we highly recommend using the offline installation process. Check:
+    https://wiki.archlinux.org/index.php/archiso#Installation_without_Internet_access
 
-For more information, check the install file under /root.
+[ FOR MORE INFORMATION ]
+
+Useful links:
+- https://blackarch.org/
+- https://wiki.archlinux.org/
+- https://blackarch.org/downloads.html
+- https://github.com/BlackArch/blackarch
+
+IRC:
+- irc://irc.freenode.net/blackarch
+

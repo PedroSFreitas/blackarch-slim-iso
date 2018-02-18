@@ -13,6 +13,14 @@ ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 # enabling all mirros
 sed -i "s|#Server|Server|g" /etc/pacman.d/mirrorlist
 
+# storing the system journal in RAM
+sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
+
+# default releng configuration
+sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
+sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
+sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
+
 # enable useful services and display manager
 enabled_services=('choose-mirror.service' 'lxdm.service' 'vboxservice.service')
 systemctl enable ${enabled_services[@]}
@@ -28,46 +36,46 @@ fi
 mkdir -p /root/Desktop
 
 # disable pc speaker beep
-su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
+echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 # disable network stuff
 rm /etc/udev/rules.d/81-dhcpcd.rules
 systemctl disable dhcpcd sshd rpcbind.service
 
 # remove special (not needed) files
-su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
-su -c 'rm /root/{.automated_script.sh,.zlogin}' root
+rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
+rm /root/{.automated_script.sh,.zlogin}
 
 # setting root password
-su -c 'echo "root:blackarch" | chpasswd' root
+echo "root:blackarch" | chpasswd
 
 # default shell
-su -c 'chsh -s /bin/zsh' root
+chsh -s /bin/zsh
 
 # font configuration
-su -c 'ln -fs /etc/fonts/conf.avail/70-no-bitmaps.conf \
-    /etc/fonts/conf.d' root
-su -c 'ln -fs /etc/fonts/conf.avail/10-sub-pixel-rgb.conf \
-    /etc/fonts/conf.d' root
-su -c 'ln -fs /etc/fonts/conf.avail/11-lcdfilter-default.conf \
-    /etc/fonts/conf.d' root
+ln -fs /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+ln -fs /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+ln -fs /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+
+# arch wiki link to Desktop
+ln -sfv /usr/share/doc/arch-wiki/html/en/ "/root/Desktop/Arch Wiki Offline"
 
 # installation and README files
-su -c 'ln -sfv /usr/share/blackarch/install /root/Desktop/install' root
-su -c 'ln -sfv /usr/share/blackarch/README /root/Desktop/README' root
+ln -sfv /usr/share/blackarch/README /root/Desktop/README
 
 # xfce4 skel configuration
-su -c 'tar xvf /etc/skel/config.tar.gz -C /root/' root
+tar xvf "/etc/skel/config.tar.gz" -C "/root/"
+tar xvf "/etc/skel/local.tar.gz" -C "/root/"
 
 # setup repository, add pacman.conf entry, sync databases
-su -c 'pacman -Syy --noconfirm' root
-su -c 'pacman -Scc --noconfirm' root
-su -c 'pacman-optimize' root
-su -c 'pacman-db-upgrade' root
-su -c 'pacman-key --init' root
-su -c 'curl -s https://blackarch.org/strap.sh | sh' root
-su -c 'pacman-key --populate blackarch archlinux' root
+pacman -Syy --noconfirm
+pacman -Scc --noconfirm
+pacman-optimize
+pacman-db-upgrade
+pacman-key --init
+curl -s https://blackarch.org/strap.sh | sh
+pacman-key --populate blackarch archlinux
 
 # disabling VirtualBox notification
-su -c 'sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all' root
+sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
 
