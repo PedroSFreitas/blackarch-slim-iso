@@ -33,7 +33,19 @@ Note: make sure to check the README inside Desktop.
 ## Installation
 
 - The Arch way. Read: https://wiki.archlinux.org/index.php/archiso#Installation_without_Internet_access
-READ READ READ!
+
+Note: following the offline installation guide, you'll have to change this command:
+
+`cp -vaT /run/archiso/bootmnt/arch/boot/$(uname -m)/vmlinuz /mnt/boot/vmlinuz-linux`
+
+to
+
+`cp -vaT /run/archiso/bootmnt/blackarch/boot/$(uname -m)/vmlinuz /mnt/boot/vmlinuz-linux`
+
+
+- And YES you can use this same ISO to install Vanilla Arch Linux! Yep!
+Just follow the https://wiki.archlinux.org/index.php/installation_guide and you
+should be good.
 
 ## Screenshots
 
