@@ -79,3 +79,6 @@ pacman-key --populate blackarch archlinux
 # disabling VirtualBox notification
 sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
 
+# adding URL link to Offline Installation
+ln -sfv "/usr/share/blackarch/BlackArch Offline Installation.desktop" /root/Desktop/
+

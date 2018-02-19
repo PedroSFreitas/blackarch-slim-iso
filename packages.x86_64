@@ -52,7 +52,9 @@ gnu-netcat
 gobuster
 gparted
 grml-zsh-config
+grub
 guymager
+gvfs
 gvim
 hash-buster
 hashcat
@@ -94,6 +96,7 @@ nosqlmap
 noto-fonts
 openssh
 openvpn
+os-prober
 p0f
 p7zip
 papirus-icon-theme
