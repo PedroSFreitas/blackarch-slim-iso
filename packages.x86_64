@@ -100,7 +100,6 @@ openvpn
 os-prober
 p0f
 p7zip
-p7zip
 papirus-icon-theme
 parted
 pavucontrol
@@ -150,8 +149,6 @@ unicorn-powershell
 unicornscan
 unix-privesc-check
 unrar
-unrar
-unzip
 unzip
 virtualbox-guest-modules-arch
 virtualbox-guest-utils
