@@ -67,6 +67,19 @@ ln -sfv /usr/share/blackarch/README /root/Desktop/README
 tar xvf "/etc/skel/config.tar.gz" -C "/root/"
 tar xvf "/etc/skel/local.tar.gz" -C "/root/"
 
+# radare2 configuration file
+cp -rfv /etc/skel/radare2rc /root/.radare2rc
+
+# disabling VirtualBox notification
+sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
+
+# adding URL link to Offline Installation
+ln -sfv "/usr/share/blackarch/BlackArch Offline Installation.desktop" /root/Desktop/
+
+# extract wordlists
+tar xvf "/usr/share/wordlists/wordlists.tar.gz" -C "/usr/share/wordlists"
+rm -rfv "/usr/share/wordlists/wordlists.tar.gz"
+
 # setup repository, add pacman.conf entry, sync databases
 pacman -Syy --noconfirm
 pacman -Scc --noconfirm
@@ -75,10 +88,4 @@ pacman-db-upgrade
 pacman-key --init
 curl -s https://blackarch.org/strap.sh | sh
 pacman-key --populate blackarch archlinux
-
-# disabling VirtualBox notification
-sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
-
-# adding URL link to Offline Installation
-ln -sfv "/usr/share/blackarch/BlackArch Offline Installation.desktop" /root/Desktop/
 
