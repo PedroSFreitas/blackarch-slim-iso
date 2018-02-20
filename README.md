@@ -49,6 +49,7 @@ should be good.
 
 ## Screenshots
 
+![login](docs/login.png)
 ![empty](docs/empty.png)
 ![fakebusy](docs/fakebusy.png)
 ![another fakebusy](docs/fakebusy1.png)
