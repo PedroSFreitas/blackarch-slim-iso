@@ -86,6 +86,7 @@ pacman -Scc --noconfirm
 pacman-optimize
 pacman-db-upgrade
 pacman-key --init
-curl -s https://blackarch.org/strap.sh | sh
+curl -s https://blackarch.org/strap.sh | \
+    sed "s|get_mirror$|#get_mirror|1" | sh
 pacman-key --populate blackarch archlinux
 

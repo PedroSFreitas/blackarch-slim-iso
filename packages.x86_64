@@ -14,6 +14,8 @@ audacity
 autopsy
 autosploit
 base64dump
+base-devel
+bc
 belati
 bettercap
 binwalk
@@ -84,6 +86,7 @@ mousepad
 msf-mpc
 mtools
 mutator
+mutt
 netctl
 netdiscover
 networkmanager
@@ -96,6 +99,7 @@ nmap
 nosqlmap
 noto-fonts
 openssh
+openvas
 openvpn
 os-prober
 p0f
