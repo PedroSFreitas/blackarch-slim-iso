@@ -1,6 +1,15 @@
 # BlackArch Slim ISO
 ## A smaller ISO compared to the regular one, with selected packages.
 
+## Image
+
+For testing:
+https://mega.nz/#!OthV1LoB!KjIpe-3UIlO9OwxvSabGk5WH3WDej8ruzEUBb7FsWak
+
+
+sha1sum: 01f205a45abf901b8dfa712c0ea4c29d465b9e9e
+
+
 ## Map
 
 - build.sh: Script to create the image.

@@ -57,13 +57,13 @@ ln -fs /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 ln -fs /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
 ln -fs /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 
-# arch wiki link to Desktop
+# Arch Wiki symlink to Desktop
 ln -sfv /usr/share/doc/arch-wiki/html/en/ "/root/Desktop/Arch Wiki Offline"
 
-# installation and README files
+# installation and README files, symlink on Desktop
 ln -sfv /usr/share/blackarch/README /root/Desktop/README
 
-# xfce4 skel configuration
+# xfce4 and more skel configuration to root but leaving original tar.gz
 tar xvf "/etc/skel/config.tar.gz" -C "/root/"
 tar xvf "/etc/skel/local.tar.gz" -C "/root/"
 
@@ -73,10 +73,14 @@ cp -rfv /etc/skel/radare2rc /root/.radare2rc
 # disabling VirtualBox notification
 sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
 
-# adding URL link to Offline Installation
-ln -sfv "/usr/share/blackarch/BlackArch Offline Installation.desktop" /root/Desktop/
+# adding URL symlink to Normal and Offline Installation page on the Arch Wiki
+ln -sfv "/usr/share/blackarch/BlackArch Offline Installation.desktop" \
+    /root/Desktop/
+ln -sfv "/usr/share/blackarch/Arch Linux Installation.desktop" \
+    /root/Desktop/
+chmod a+x /root/Desktop/*.desktop
 
-# extract wordlists
+# extract wordlists and remove the tar file
 tar xvf "/usr/share/wordlists/wordlists.tar.gz" -C "/usr/share/wordlists"
 rm -rfv "/usr/share/wordlists/wordlists.tar.gz"
 
@@ -86,6 +90,7 @@ pacman -Scc --noconfirm
 pacman-optimize
 pacman-db-upgrade
 pacman-key --init
+# install BlackArch repository with default mirror (that's why the sed)
 curl -s https://blackarch.org/strap.sh | \
     sed "s|get_mirror$|#get_mirror|1" | sh
 pacman-key --populate blackarch archlinux
