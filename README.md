@@ -6,7 +6,7 @@
 For testing:
 https://mega.nz/#!3wYgQLgI!orvDlLts07Baa9I1JGyZKQzEfVy8-y4karu6EbcXBkw
 
-sha1sum: 01f205a45abf901b8dfa712c0ea4c29d465b9e9e
+sha1sum: 0a91f2d59d3a29645733e396a4124fcc96834064
 
 
 important: this Live ISO could be out of date, not reflecting the actual state
