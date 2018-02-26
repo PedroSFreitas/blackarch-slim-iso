@@ -70,6 +70,9 @@ tar xvf "/etc/skel/local.tar.gz" -C "/root/"
 # radare2 configuration file
 cp -rfv /etc/skel/radare2rc /root/.radare2rc
 
+# gdb configuration file
+cp -rfv /etc/skel/gdbinit /root/.gdbinit
+
 # disabling VirtualBox notification
 sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
 

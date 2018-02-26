@@ -10,6 +10,10 @@ https://mega.nz/#!OthV1LoB!KjIpe-3UIlO9OwxvSabGk5WH3WDej8ruzEUBb7FsWak
 sha1sum: 01f205a45abf901b8dfa712c0ea4c29d465b9e9e
 
 
+important: this Live ISO could be out of date, not reflecting the actual state
+of the repository.
+
+
 ## Map
 
 - build.sh: Script to create the image.
@@ -50,6 +54,12 @@ Note: following the offline installation guide, you'll have to change this comma
 to
 
 `cp -vaT /run/archiso/bootmnt/blackarch/boot/$(uname -m)/vmlinuz /mnt/boot/vmlinuz-linux`
+
+
+- It's also important to mention that offline installation will install 
+everything that the Live ISO has. It means you'll have applications that you
+don't necessarily need, i.e.: gpu drivers, etc. Make sure to do a clean up
+after.
 
 
 - And YES you can use this same ISO to install Vanilla Arch Linux! Yep!
