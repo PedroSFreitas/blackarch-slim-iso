@@ -4,8 +4,7 @@
 ## Image
 
 For testing:
-https://mega.nz/#!OthV1LoB!KjIpe-3UIlO9OwxvSabGk5WH3WDej8ruzEUBb7FsWak
-
+https://mega.nz/#!3wYgQLgI!orvDlLts07Baa9I1JGyZKQzEfVy8-y4karu6EbcXBkw
 
 sha1sum: 01f205a45abf901b8dfa712c0ea4c29d465b9e9e
 
