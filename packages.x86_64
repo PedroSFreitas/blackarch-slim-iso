@@ -4,6 +4,7 @@ aesshell
 aircrack-ng
 alsa-plugins
 alsa-utils
+android-apktool
 aquatone
 arc-gtk-theme
 arch-install-scripts
@@ -22,6 +23,7 @@ binwalk
 bleachbit
 bulk-extractor
 burpsuite
+bytecode-viewer
 cewl
 cisco-auditing-tool
 cisco-global-exploiter
@@ -74,7 +76,7 @@ linux-exploit-suggester.sh
 lxdm
 lzop
 maltego
-malware-check-tool
+malwaredetect
 masscan
 memdump
 mesa
@@ -174,7 +176,6 @@ xf86-video-vesa
 xfce4
 xfce4-goodies
 xorg
-xplico
 xsel
 xz
 zip
