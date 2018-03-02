@@ -4,13 +4,12 @@ aircrack-ng
 alsa-plugins
 alsa-utils
 android-apktool
-aquatone
+#aquatone # need fix
 arc-gtk-theme
 arch-install-scripts
 arch-wiki-docs
 arduino
 audacity
-autopsy
 autosploit
 base64dump
 base-devel
