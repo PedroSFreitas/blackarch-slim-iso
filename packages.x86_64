@@ -21,6 +21,7 @@ bulk-extractor
 burpsuite
 bytecode-viewer
 cewl
+clonezilla
 cloudflare-enum
 cppcheck
 crunch
@@ -28,6 +29,7 @@ dialog
 dirb
 dirbuster
 dirsearch
+dosfstools
 enum4linux
 enum-shares
 ettercap
@@ -40,6 +42,7 @@ gcc
 gdb
 geany
 geany-plugins
+git
 gnome-keyring
 gnu-netcat
 gobuster
@@ -53,6 +56,7 @@ hashcat
 hashid
 htop
 hydra
+intel-ucode
 iw
 john
 kickthemout
@@ -63,6 +67,7 @@ libgnome-keyring
 libreoffice-still
 libsecret
 linux-exploit-suggester.sh
+lsb-release
 lxdm
 lzop
 maltego
@@ -92,6 +97,7 @@ noto-fonts
 openssh
 openvas
 openvpn
+ophcrack
 os-prober
 p7zip
 papirus-icon-theme
@@ -123,11 +129,14 @@ spiderfoot
 sqlmap
 squashfs-tools
 sshfs
+ssldump
 stegdetect
 steghide
 stegsolve
 sublist3r
 tcpdump
+tcpextract
+tcpick
 testdisk
 theharvester
 tmux
