@@ -53,9 +53,9 @@ echo "root:blackarch" | chpasswd
 chsh -s /bin/zsh
 
 # font configuration
-ln -fs /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
-ln -fs /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
-ln -fs /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+ln -sfv /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+ln -sfv /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+ln -sfv /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 
 # Arch Wiki symlink to Desktop
 ln -sfv /usr/share/doc/arch-wiki/html/en/ "/root/Desktop/Arch Wiki Offline"
@@ -73,6 +73,9 @@ cp -rfv /etc/skel/radare2rc /root/.radare2rc
 # gdb configuration file
 cp -rfv /etc/skel/gdbinit /root/.gdbinit
 
+# vim configuration file
+cp -rfv /etc/skel/vim /root/.vim
+
 # disabling VirtualBox notification
 sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
 
@@ -87,9 +90,12 @@ chmod a+x /root/Desktop/*.desktop
 tar xvf "/usr/share/wordlists/wordlists.tar.gz" -C "/usr/share/wordlists"
 rm -rfv "/usr/share/wordlists/wordlists.tar.gz"
 
+# adding useful cheatsheets
+ln -sfv "/usr/share/cheatsheets/Pentesting Cheatsheet" "/root/Desktop/"
+ln -sfv "/usr/share/cheatsheets/Web Pentesting Cheat Sheet" "/root/Desktop/"
+
 # setup repository, add pacman.conf entry, sync databases
 pacman -Syy --noconfirm
-pacman -Scc --noconfirm
 pacman-optimize
 pacman-db-upgrade
 pacman-key --init
@@ -97,4 +103,3 @@ pacman-key --init
 curl -s https://blackarch.org/strap.sh | \
     sed "s|get_mirror$|#get_mirror|1" | sh
 pacman-key --populate blackarch archlinux
-
