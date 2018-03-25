@@ -1,0 +1,71 @@
+if &term =~ '256color'
+    " Disable Background Color Erase (BCE) so that color schemes
+    " work properly when Vim is used inside tmux and GNU screen.
+    set t_ut=
+endif
+
+" Color schemes
+set background=dark
+colorscheme nord
+" End of colors cheme
+
+" Keybinds
+nmap <F2> :NERDTreeToggle<CR>
+nmap <F3> :Tagbar<CR>
+nmap <F4> :shell<CR>
+nmap <F5> :tp<CR>
+nmap <F6> :tn<CR>
+nmap <F7> :bp<CR>
+nmap <F8> :bn<CR>
+nmap <F9> :bp\|bd #<CR>
+" Keymap to remove trailing spaces
+nnoremap <F10> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+" Automatically open NERDTree
+autocmd VimEnter * NERDTree
+autocmd VimEnter * Tagbar
+" Automatically switch to buffer
+autocmd VimEnter * wincmd p
+let g:NERDTreeWinSize=20
+
+" Arline setting
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
+
+" Change buffer without the need to save
+set hidden
+
+" IMPORTANT 4 space wide tab
+set shiftwidth=4 tabstop=4 expandtab
+" HTML tab width
+autocmd FileType html,css :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files
+
+" highlight column marker
+autocmd BufNewFile,BufRead * set cc=81
+
+" Folding
+" set foldmethod=indent
+" set nofoldenable
+" no wrapping lines
+set nowrap
+" Random configs
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+set t_Co=256
+syntax on
+set number
+set showmatch
+set comments=sl:/*,mb:\ *,elx:\ */
+" Paste more than once
+xnoremap p pgvy
+set wildmenu
+set showcmd
+set nostartofline
+set ruler
+set confirm
+set cmdheight=2
+set incsearch
+set foldenable
+" paste set by default disable tab spacing.
+" set paste
