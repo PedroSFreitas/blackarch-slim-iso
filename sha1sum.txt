@@ -1,0 +1,1 @@
+18f74bcfc5df6e9f78c46835dc232ce9473c131b  blackarchlinux-live-2018.03.25-x86_64.iso
