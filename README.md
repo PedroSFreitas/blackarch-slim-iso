@@ -4,13 +4,13 @@
 ## Image
 
 For testing:
-https://mega.nz/#!rkZXXDRQ!JTWbGOzosplJ1rwDgZsVZBxjNKRNqm2z6WoFdlm1L_s
+https://mega.nz/#!DpoChSrC!b3EpD7Yb0XxbHxzxoqUbqos7pmH0eIosY2OiNWtX86M
 
 
-sha1sum: 3f42da494109d6c20167e24a4a6e5683495412a9 
+sha1sum: 18f74bcfc5df6e9f78c46835dc232ce9473c131b
 
 
-ref. to commit: 376e63873565a995eb879605bcb829bf38f29fd1
+ref. to commit: d06329570959e1940fe97d75680b84d66778abc9
 
 
 important: this Live ISO could be out of date, not reflecting the actual state
@@ -59,7 +59,7 @@ to
 `cp -vaT /run/archiso/bootmnt/blackarch/boot/$(uname -m)/vmlinuz /mnt/boot/vmlinuz-linux`
 
 
-- It's also important to mention that offline installation will install 
+- It's also important to mention that offline installation will install
 everything that the Live ISO has. It means you'll have applications that you
 don't necessarily need, i.e.: gpu drivers, etc. Make sure to do a clean up
 after.
