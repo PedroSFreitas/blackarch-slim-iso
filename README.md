@@ -27,14 +27,24 @@ of the repository.
   during the building process. You can modify this file to run any
   administration command or to modify any configuration file.
 
+## Dependencies
+
+`archiso`: https://www.archlinux.org/packages/extra/any/archiso/
+
+```
+# pacman -S archiso
+```
+
 ## Building the Image
 
 Building the image is only possible on an Arch Linux installation.
 Clone the repo and run the following **as root**:
 
+(consider backing up the `out` folder)
+
 ```
 # cd blackarch-slim-iso
-# rm -rfv out work
+# rm -rfv work/
 # mkdir out work
 # ./build.sh -v
 ```
@@ -61,15 +71,19 @@ to
 
 - It's also important to mention that offline installation will install
 everything that the Live ISO has. It means you'll have applications that you
-don't necessarily need, i.e.: gpu drivers, etc. Make sure to do a clean up
-after.
+don't necessarily need, i.e.: gpu drivers, virtualbox modules, etc.
+Make sure to do a clean up after, if necessary.
 
 
 - And YES you can use this same ISO to install Vanilla Arch Linux! Yep!
 Just follow the https://wiki.archlinux.org/index.php/installation_guide and you
 should be good.
 
-## Screenshots
+
+- The Live ISO has Arch Wiki Offline package installed, meaning you can check
+all Arch documentation without access to the Internet. Make sure to check it!
+
+## Screenshots (probably out of date)
 
 ![login](docs/login.png)
 ![empty](docs/empty.png)
