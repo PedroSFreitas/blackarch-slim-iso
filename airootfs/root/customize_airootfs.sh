@@ -66,6 +66,7 @@ ln -sfv /usr/share/blackarch/README /root/Desktop/README
 # xfce4 and more skel configuration to root but leaving original tar.gz
 tar xvf "/etc/skel/config.tar.gz" -C "/root/"
 tar xvf "/etc/skel/local.tar.gz" -C "/root/"
+tar xvf "/etc/skel/mozilla.tar.gz" -C "/root/"
 
 # radare2 configuration file
 cp -rfv /etc/skel/radare2rc /root/.radare2rc
