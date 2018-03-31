@@ -91,8 +91,7 @@ tar xvf "/usr/share/wordlists/wordlists.tar.gz" -C "/usr/share/wordlists"
 rm -rfv "/usr/share/wordlists/wordlists.tar.gz"
 
 # adding useful cheatsheets
-ln -sfv "/usr/share/cheatsheets/Pentesting Cheatsheet" "/root/Desktop/"
-ln -sfv "/usr/share/cheatsheets/Web Pentesting Cheat Sheet" "/root/Desktop/"
+ln -sfv "/usr/share/cheatsheets" "/root/Desktop/Cheatsheets"
 
 # setup repository, add pacman.conf entry, sync databases
 pacman -Syy --noconfirm

