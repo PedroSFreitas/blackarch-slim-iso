@@ -22,8 +22,8 @@ nmap <F9> :bp\|bd #<CR>
 nnoremap <F10> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " Automatically open NERDTree
-autocmd VimEnter * NERDTree
-autocmd VimEnter * Tagbar
+" autocmd VimEnter * NERDTree
+" autocmd VimEnter * Tagbar
 " Automatically switch to buffer
 autocmd VimEnter * wincmd p
 let g:NERDTreeWinSize=20
