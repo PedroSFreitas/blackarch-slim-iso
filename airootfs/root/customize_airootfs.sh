@@ -52,6 +52,16 @@ echo "root:blackarch" | chpasswd
 # default shell
 chsh -s /bin/zsh
 
+# setup repository, add pacman.conf entry, sync databases
+pacman -Syy --noconfirm
+pacman-optimize
+pacman-db-upgrade
+pacman-key --init
+# install BlackArch repository with default mirror (that's why the sed)
+curl -s https://blackarch.org/strap.sh | \
+    sed "s|get_mirror$|#get_mirror|1" | sh
+pacman-key --populate blackarch archlinux
+
 # font configuration
 ln -sfv /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 ln -sfv /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
@@ -94,12 +104,13 @@ rm -rfv "/usr/share/wordlists/wordlists.tar.gz"
 # adding useful cheatsheets
 ln -sfv "/usr/share/cheatsheets" "/root/Desktop/Cheatsheets"
 
-# setup repository, add pacman.conf entry, sync databases
-pacman -Syy --noconfirm
-pacman-optimize
-pacman-db-upgrade
-pacman-key --init
-# install BlackArch repository with default mirror (that's why the sed)
-curl -s https://blackarch.org/strap.sh | \
-    sed "s|get_mirror$|#get_mirror|1" | sh
-pacman-key --populate blackarch archlinux
+# install manual packages
+pkgfold="/usr/share/blackarch/packages"
+pkglist=('geany-themes-1.24-1-any.pkg.tar.xz')
+for package in ${pkglist[@]}; do
+    echo "[*] installing: ${package}"
+    if ! pacman -U --force --needed --noconfirm "${pkgfold}/${package}"; then
+        echo "[!] failed: ${package}"
+    fi
+done
+
