@@ -37,7 +37,6 @@ enum-shares
 ettercap
 evince
 findmyhash
-findsploit
 firefox
 foremost
 gcc
@@ -126,6 +125,7 @@ raven
 reaver
 recon-ng
 rsync
+searchsploit
 set
 shodan
 smbmap
