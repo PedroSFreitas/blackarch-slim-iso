@@ -87,6 +87,9 @@ cp -rfv /etc/skel/gdbinit /root/.gdbinit
 # vim configuration file
 cp -rfv /etc/skel/vim /root/.vim
 
+# zshrc skell file
+cp -rfv /etc/skel/zshrc /root/.zshrc
+
 # disabling VirtualBox notification
 sed -i "s|notify-send|echo|g" /usr/bin/VBoxClient-all
 
@@ -103,6 +106,9 @@ rm -rfv "/usr/share/wordlists/wordlists.tar.gz"
 
 # adding useful cheatsheets
 ln -sfv "/usr/share/cheatsheets" "/root/Desktop/Cheatsheets"
+
+# unpacking postgres msf database
+tar xvf "/etc/skel/postgres.tar.gz" -C "/var/lib/"
 
 # install manual packages
 pkgfold="/usr/share/blackarch/packages"

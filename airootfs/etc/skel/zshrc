@@ -2,3 +2,5 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
+alias msfconsole="msfconsole -x \"db_connect root@msf\""
+
