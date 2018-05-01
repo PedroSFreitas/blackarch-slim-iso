@@ -23,6 +23,7 @@ bulk-extractor
 burpsuite
 bytecode-viewer
 cewl
+cherrytree
 clonezilla
 cloudflare-enum
 cppcheck
@@ -128,6 +129,7 @@ rsync
 searchsploit
 set
 shodan
+smbclient
 smbmap
 smtp-user-enum
 spiderfoot
