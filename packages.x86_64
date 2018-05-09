@@ -1,3 +1,4 @@
+
 0d1n
 0trace
 afflib
@@ -23,11 +24,13 @@ bulk-extractor
 burpsuite
 bytecode-viewer
 cewl
+cfr
 cherrytree
 clonezilla
 cloudflare-enum
 cppcheck
 crunch
+dex2jar
 dialog
 dirbuster
 dirsearch
@@ -37,9 +40,11 @@ enum4linux
 enum-shares
 ettercap
 evince
+fernflower
 findmyhash
 firefox
 foremost
+frida
 gcc
 gdb
 geany
@@ -60,6 +65,7 @@ htop
 hydra
 intel-ucode
 iw
+jad
 john
 kickthemout
 kismet
@@ -103,12 +109,14 @@ ophcrack
 os-prober
 otf-font-awesome
 p7zip
+padbuster
 papirus-icon-theme
 parted
 pavucontrol
 peda
 peframe
 perl-image-exiftool
+pngcheck
 postgresql
 powerline-fonts
 proxychains-ng
@@ -147,6 +155,7 @@ tcpextract
 tcpick
 testdisk
 theharvester
+tigervnc
 tmux
 tor
 traceroute
