@@ -1,6 +1,34 @@
 # Bug Hunting Methodology and Enumeration
 ![exploitation](https://img.shields.io/badge/WIP-70%25-green.svg)
 
+**Summary**
+1. [Enumerate all subdomains](#enumerate-all-subdomains-only-if-the-scope-is-domainext)
+ * Subbrute
+ * KnockPy
+ * GoogleDorks
+ * EyeWitness
+ * Sublist3r
+ * Aquatone
+2. [Passive Recon](#passive-recon)
+ * Shodan
+ * Wayback Machine
+ * The Harvester
+3. [Active Recon](#active-recon)
+ * Nmap
+ * Nmap Script
+ * RPCClient
+ * Enum4all
+4. [List all the subdirectories and files](#list-all-the-subdirectories-and-files)
+ * Gobuster
+ * Backup File Artifacts Checker
+5. [Web Vulnerabilities](#looking-for-web-vulnerabilities)
+ * Repository Github
+ * Burp
+ * Web Checklist
+ * Nikto
+ * Payment functionality
+
+
 ## Enumerate all subdomains (only if the scope is *.domain.ext)
 
 * Using Subbrute
@@ -276,32 +304,57 @@ then launch Burp with : java -jar burpsuite_free_v*.jar &
 ```
 
 * Checklist for Web vulns
-```
-[] AWS Amazon Bucket S3  
-[] Git Svn insecure files   
-[] CVE Shellshock Heartbleed  
-[] Open redirect            
-[] Traversal directory    
-[] XSS injection
-[] CRLF injection  
-[] CSRF injection          
-[] SQL injection            
-[] NoSQL injection                 
-[] PHP include      
-[] Upload insecure files     
-[] SSRF injection         
-[] XXE injections
-[] CSV injection
-[] PHP serialization
-...   
-```
+  ```
+  [] AWS Amazon Bucket S3  
+  [] Git Svn insecure files   
+  [] CVE Shellshock Heartbleed  
+  [] Open redirect            
+  [] Traversal directory    
+  [] XSS injection
+  [] CRLF injection  
+  [] CSRF injection          
+  [] SQL injection            
+  [] NoSQL injection                 
+  [] PHP include      
+  [] Upload insecure files     
+  [] SSRF injection         
+  [] XXE injections
+  [] CSV injection
+  [] PHP serialization
+  ...   
+  ```
 
 * Subscribe to the site and pay for the additional functionality to test
 
 * Launch a Nikto scan in case you missed something
-```
-nikto -h http://domain.example.com
-```
+  ```
+  nikto -h http://domain.example.com
+  ```
+
+* Payment functionality - [@gwendallecoguic](https://twitter.com/gwendallecoguic/status/988138794686779392)
+  > if the webapp you're testing uses an external payment gateway, check the doc to find the test credit numbers, purchase something and if the webapp didn't disable the test mode, it will be free
+
+  From https://stripe.com/docs/testing#cards : "Use any of the following test card numbers, a valid expiration date in the future, and any random CVC number, to create a successful payment. Each test card's billing country is set to U.S. "
+  e.g :
+
+Test card numbers and tokens  
+
+| NUMBER           | BRAND          | TOKEN          |
+| :-------------   | :------------- | :------------- |
+| 4242424242424242 | Visa           | tok_visa       |
+| 4000056655665556 | Visa (debit)   | tok_visa_debit |
+| 5555555555554444 | Mastercard     | tok_mastercard |
+
+International test card numbers and tokens     
+
+| NUMBER           | TOKEN          | COUNTRY        | BRAND          |
+| :-------------   | :------------- | :------------- | :------------- |
+| 4000000400000008 | tok_at         | Austria (AT)   | Visa           |
+| 4000000560000004 | tok_be         | Belgium (BE)   | Visa           |
+| 4000002080000001 | tok_dk         | Denmark (DK)   | Visa           |
+| 4000002460000001 | tok_fi         | Finland (FI)   | Visa           |
+| 4000002500000003 | tok_fr         | France (FR)    | Visa           |
+
 
 ## Thanks to
  * http://blog.it-securityguard.com/bugbounty-yahoo-phpinfo-php-disclosure-2/

