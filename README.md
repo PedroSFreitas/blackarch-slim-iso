@@ -4,13 +4,13 @@
 ## Image
 
 For testing:
-https://mega.nz/#!iowiALqR!1qlaeX9CZT53XY5ZLBll04H4TKxQrmoYvHCzI0kM4ho
+https://mega.nz/#!vpQw2R7T!_553MQ34Y4wV4t5lIQU7SGPxXKsYBz7NKLM-1wncgco
 
 
-sha1sum: ace1a9ee3a7bc8234208d8fddee1d16e6286d0ea
+sha1sum: f68bf283cb49fdf8351caf09d452979807342190
 
 
-ref. to commit: 911f92b3f477a69a9b528478cc3d15659d9d80d7
+ref. to commit: a4e62c7cbe130e2b739c0bf5828771c59ab24352
 
 
 important: this Live ISO could be out of date, not reflecting the actual state
