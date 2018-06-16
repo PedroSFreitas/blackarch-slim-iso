@@ -110,6 +110,7 @@ ophcrack
 os-prober
 otf-font-awesome
 p7zip
+pacman-contrib
 padbuster
 papirus-icon-theme
 parted
@@ -168,7 +169,6 @@ ttf-freefont
 ttf-inconsolata
 ttf-ionicons
 ttf-liberation
-ttf-symbola
 unicorn-powershell
 unicornscan
 unrar
