@@ -53,8 +53,7 @@ echo "root:blackarch" | chpasswd
 chsh -s /bin/zsh
 
 # setup repository, add pacman.conf entry, sync databases
-pacman -Syy --noconfirm
-pacman-optimize
+pacman -Sy --noconfirm
 pacman-db-upgrade
 pacman-key --init
 # install BlackArch repository with default mirror (that's why the sed)
