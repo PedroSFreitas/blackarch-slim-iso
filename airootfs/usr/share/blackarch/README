@@ -13,6 +13,10 @@
     you.
   - Although we highly recommend using the offline installation process. Check:
     https://wiki.archlinux.org/index.php/archiso#Installation_without_Internet_access
+  - You can also use our script (blackarch-install). Using this ISO you are
+    better using the Offline Installation option.
+    Before running the script, please update it running:
+    pacman -Syy blackarch-installer
 
 [ FOR MORE INFORMATION ]
 
